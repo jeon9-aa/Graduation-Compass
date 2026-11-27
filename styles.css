@@ -275,16 +275,6 @@ header {
   margin: 5px 0;
 }
 
-.notice {
-  padding: 13px 15px;
-  background: #f3f4e9;
-  border: 1px solid #e6e8d8;
-  border-radius: 8px;
-  font-size: 12px;
-  color: #747957;
-  margin: 20px 0;
-}
-
 .field {
   margin-bottom: 17px;
 }
@@ -313,39 +303,6 @@ select:disabled {
   color: #97a28d;
 }
 
-fieldset {
-  border: 0;
-  padding: 0;
-  margin: 22px 0;
-}
-
-legend {
-  font-size: 13px;
-  margin-bottom: 9px;
-}
-
-.options {
-  display: flex;
-  gap: 10px;
-}
-
-.options label {
-  border: 1px solid #dfe6d6;
-  flex: 1;
-  border-radius: 7px;
-  padding: 9px;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
-
-.options label:has(:checked) {
-  background: #edf4e8;
-  border-color: #8aa77a;
-}
-
 input[type="checkbox"] {
   width: 17px;
   height: 17px;
@@ -353,23 +310,6 @@ input[type="checkbox"] {
   cursor: pointer;
   margin: 0;
   flex-shrink: 0;
-}
-
-.conditional {
-  padding: 15px;
-  border: 1px solid #e3e8da;
-  background: #f8faf4;
-  border-radius: 8px;
-  margin-bottom: 16px;
-}
-
-.conditional p {
-  font-size: 11px;
-  color: #869579;
-}
-
-.conditional .field:last-child {
-  margin: 0;
 }
 
 .primary {

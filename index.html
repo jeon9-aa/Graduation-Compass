@@ -74,49 +74,6 @@
           <select id="major"></select>
         </div>
 
-        <fieldset>
-          <legend>해당하는 학적을 선택해 주세요</legend>
-          <div class="options">
-            <label><input type="checkbox" id="transfer">편입</label>
-            <label><input type="checkbox" id="change">전과</label>
-            <label><input type="checkbox" id="multi">다전공</label>
-          </div>
-        </fieldset>
-
-        <div class="conditional" id="transfer-fields" hidden>
-          <div class="field">
-            <label for="transfer-year">편입 연도</label>
-            <input id="transfer-year" type="number" min="2000" max="2040" placeholder="예: 2026">
-          </div>
-          <p>인정학점과 편입생 기준은 자료 연결 후 확인해요.</p>
-        </div>
-
-        <div class="conditional" id="change-fields" hidden>
-          <div class="field">
-            <label for="change-year">전과 승인연도</label>
-            <input id="change-year" type="number" min="2000" max="2040" placeholder="예: 2026">
-          </div>
-        </div>
-
-        <div class="conditional" id="multi-fields" hidden>
-          <div class="field">
-            <label for="multi-type">다전공 유형</label>
-            <select id="multi-type">
-              <option>복수전공</option>
-              <option>부전공</option>
-              <option>융합전공</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="multi-year">다전공 승인연도</label>
-            <input id="multi-year" type="number" min="2000" max="2040" placeholder="예: 2026">
-          </div>
-          <div class="field">
-            <label for="extra-major">추가 전공명</label>
-            <input id="extra-major" maxlength="60" placeholder="추가로 이수하는 전공을 입력하세요">
-          </div>
-        </div>
-
         <button type="submit" class="primary wide">내 교육과정 보기 →</button>
         <button type="button" id="try-demo" class="demo-link">예시 이수 내역으로 먼저 둘러보기 ↗</button>
         <p class="save-note">선택한 과목은 이 브라우저에 자동 저장돼요.</p>
@@ -137,8 +94,6 @@
       </div>
       <button id="edit-profile" class="outline" type="button">내 정보 수정 ↗</button>
     </div>
-
-    <div id="special-notice" class="notice" hidden></div>
 
     <section class="summary">
       <div class="summary-main">
@@ -348,7 +303,36 @@
     }
 
     function storageKey(p) {
-      return 'pknu-dashboard-v3:' + (demoMode ? 'demo:' : 'student:') + JSON.stringify(p);
+      return 'pknu-dashboard-v3:' + (demoMode ? 'demo:' : 'student:') + JSON.stringify(normalizeProfile(p));
+    }
+
+    function normalizeProfile(p) {
+      return { entry: p.entry, college: p.college, department: p.department, major: p.major || '' };
+    }
+
+    function migrateCourseStorage(p) {
+      const target = storageKey(p);
+      const prefix = 'pknu-dashboard-v3:' + (demoMode ? 'demo:' : 'student:');
+      let keys;
+      try {
+        keys = Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i));
+      } catch {
+        return;
+      }
+      for (const key of keys) {
+        if (!key?.startsWith(prefix) || key === target) continue;
+        const suffix = key.endsWith(':custom') ? ':custom' : '';
+        const rawProfile = key.slice(prefix.length, suffix ? -suffix.length : undefined);
+        let previous;
+        try { previous = JSON.parse(rawProfile); } catch { continue; }
+        if (!previous || typeof previous !== 'object') continue;
+        // Only reuse ordinary profiles whose obsolete fields were empty.
+        if (Object.entries(previous).some(([field, value]) =>
+          !['entry', 'college', 'department', 'major'].includes(field) && value)) continue;
+        if (storageKey(previous) !== target || read(target + suffix, null) !== null) continue;
+        const saved = read(key, null);
+        if (Array.isArray(saved)) save(target + suffix, saved);
+      }
     }
 
     function setSelectOptions(el, values, prompt) {
@@ -432,32 +416,12 @@
       setSelectOptions($('#major'), majors, '세부 전공을 선택하세요');
     });
 
-    for (const type of ['transfer', 'change', 'multi']) {
-      $(`#${type}`).addEventListener('change', () => {
-        const active = $(`#${type}`).checked;
-        $(`#${type}-fields`).hidden = !active;
-        $(`#${type}-fields`).querySelectorAll('input, select').forEach((field) => {
-          field.required = active;
-          field.disabled = !active;
-        });
-      });
-    }
-
     function getProfile() {
       return {
         entry: $('#entry').value,
         college: $('#college').value,
         department: $('#department').value,
-        major: $('#major-field').hidden ? '' : $('#major').value,
-        transfer: $('#transfer').checked ? $('#transfer-year').value : null,
-        change: $('#change').checked ? $('#change-year').value : null,
-        multi: $('#multi').checked
-          ? {
-              type: $('#multi-type').value,
-              year: $('#multi-year').value,
-              name: $('#extra-major').value.trim()
-            }
-          : null
+        major: $('#major-field').hidden ? '' : $('#major').value
       };
     }
 
@@ -470,22 +434,11 @@
       $('#department').dispatchEvent(new Event('change'));
       $('#major').value = p.major || '';
 
-      for (const type of ['transfer', 'change', 'multi']) {
-        $(`#${type}`).checked = Boolean(p[type]);
-        $(`#${type}`).dispatchEvent(new Event('change'));
-      }
-
-      $('#transfer-year').value = p.transfer || '';
-      $('#change-year').value = p.change || '';
-
-      if (p.multi) {
-        $('#multi-type').value = p.multi.type;
-        $('#multi-year').value = p.multi.year;
-        $('#extra-major').value = p.multi.name;
-      }
     }
 
     function start(p, seed = false) {
+      p = normalizeProfile(p);
+      migrateCourseStorage(p);
       profile = p;
       rule =
         catalog.creditRules.find(
@@ -539,16 +492,6 @@
       $('#header-source').hidden = false;
       $('#profile-label').textContent = `${p.entry}학번 · ${p.major || p.department} · ${p.college}`;
 
-      const special = [
-        p.transfer && `${p.transfer}년 편입`,
-        p.change && `${p.change}년 전과`,
-        p.multi && `${p.multi.year}년 ${p.multi.type} (${p.multi.name})`
-      ].filter(Boolean);
-
-      $('#special-notice').hidden = !special.length;
-      $('#special-notice').textContent =
-        `확인 필요 · ${special.join(' · ')} · 개인별 인정학점과 추가 요건은 공식 자료에서 확인하세요.`;
-
       $('#search').value = '';
       $('#grade-filter').value = 'all';
       $('#status-filter').value = 'all';
@@ -560,16 +503,9 @@
     $('#profile-form').addEventListener('submit', (e) => {
       e.preventDefault();
       const p = getProfile();
-      if (p.multi && !p.multi.name) {
-        $('#extra-major').setCustomValidity('추가 전공명을 입력해 주세요.');
-        $('#extra-major').reportValidity();
-        return;
-      }
       demoMode = false;
       start(p);
     });
-
-    $('#extra-major').addEventListener('input', () => $('#extra-major').setCustomValidity(''));
 
     $('#try-demo').addEventListener('click', () => {
       const r = catalog.creditRules.find((item) => item.major === '컴퓨터공학전공');
@@ -579,10 +515,7 @@
         entry: String(r.year),
         college: r.college,
         department: r.department,
-        major: r.major,
-        transfer: null,
-        change: null,
-        multi: null
+        major: r.major
       };
       fillProfile(p);
       start(p, true);
@@ -997,8 +930,8 @@
 
       const lastProfile = read('pknu-last-v3', null);
       if (lastProfile) {
-        profile = lastProfile;
-        fillProfile(lastProfile);
+        profile = normalizeProfile(lastProfile);
+        fillProfile(profile);
       }
     }
 

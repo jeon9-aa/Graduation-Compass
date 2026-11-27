@@ -4,6 +4,41 @@ const vm = require('node:vm');
 const test = require('node:test');
 const data = JSON.parse(fs.readFileSync('general-education.json', 'utf8'));
 
+test('ordinary profile records and custom courses survive profile simplification', () => {
+  const storage = new Map();
+  const p = { entry: '2026', college: 'College', department: 'Department', major: '' };
+  const prefix = 'pknu-dashboard-v3:student:';
+  const previousKey = prefix + JSON.stringify({ ...p, transfer: null, change: null, multi: null });
+  storage.set(previousKey, JSON.stringify(['course-0', 'user-1']));
+  storage.set(previousKey + ':custom', JSON.stringify([{ id: 'user-1', credits: 3 }]));
+  const context = vm.createContext({
+    document: { querySelector() { return { addEventListener() {} }; }, addEventListener() {} },
+    localStorage: {
+      get length() { return storage.size; },
+      key(i) { return [...storage.keys()][i]; },
+      getItem(k) { return storage.get(k) ?? null; },
+      setItem(k, v) { storage.set(k, v); }
+    }, p, console
+  });
+  const script = fs.readFileSync('index.html', 'utf8').match(/<script>([\s\S]*?)<\/script>/)[1];
+  vm.runInContext(script.replace(/\binit\(\);\s*$/, ''), context);
+  vm.runInContext('migrateCourseStorage(p);', context);
+  const target = prefix + JSON.stringify(p);
+  assert.equal(storage.get(target), storage.get(previousKey));
+  assert.equal(storage.get(target + ':custom'), storage.get(previousKey + ':custom'));
+  storage.set(target, '[]');
+  vm.runInContext('migrateCourseStorage(p);', context);
+  assert.equal(storage.get(target), '[]');
+  storage.delete(target);
+  storage.delete(previousKey);
+  storage.set(prefix + JSON.stringify({ ...p, transfer: '2025' }), '["course-2"]');
+  vm.runInContext('migrateCourseStorage(p);', context);
+  assert.equal(storage.has(target), false);
+  assert.deepEqual(JSON.parse(vm.runInContext('JSON.stringify(normalizeProfile({...p, multi: {name: "Other"}}))', context)), p);
+  const catalog = JSON.parse(fs.readFileSync('graduation-data.json', 'utf8'));
+  assert.ok(catalog.catalog.creditRules.every(rule => !('복수전공' in rule.credits)));
+});
+
 test('PDF catalog has all six competencies and preserves course names and credits', () => {
   assert.equal(data.competencies.length, 6);
   assert.equal(data.courses.length, 341);
