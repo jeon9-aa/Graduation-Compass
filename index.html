@@ -20,6 +20,7 @@
     <div class="top-right">
       <span class="badge">시연용 프로토타입</span>
       <button class="text-btn" id="about" type="button">프로젝트 소개 ↗</button>
+      <button class="source-button" id="header-source" type="button" data-source="general" hidden>학교 공식 기준 자료 ↗</button>
     </div>
   </header>
 
@@ -43,11 +44,12 @@
       </div>
     </section>
 
+    <div class="setup-card">
+      <p class="setup-note">입학연도별 학교 학점 기준과 내가 체크한 과목으로 이수 현황을 계산해요.</p>
     <section class="card">
       <div class="eyebrow">시작하기</div>
       <h2>나의 교육과정 찾기</h2>
       <p class="muted">내 정보를 선택하고 졸업까지의 경로를 살펴보세요.</p>
-      <div class="notice">입학연도별 학교 학점 기준과 내가 체크한 과목으로 이수 현황을 계산해요.</div>
 
       <form id="profile-form">
         <div class="field">
@@ -120,6 +122,7 @@
         <p class="save-note">선택한 과목은 이 브라우저에 자동 저장돼요.</p>
       </form>
     </section>
+    </div>
   </main>
 
   <!-- 졸업 현황 대시보드 -->
@@ -127,16 +130,12 @@
     <div class="heading">
       <div>
         <div class="eyebrow">MY CURRICULUM</div>
-        <h1>나의 졸업 현황</h1>
-        <p class="muted" id="profile-label"></p>
+        <div class="heading-title">
+          <h1>나의 졸업 현황</h1>
+          <p class="muted" id="profile-label"></p>
+        </div>
       </div>
       <button id="edit-profile" class="outline" type="button">내 정보 수정 ↗</button>
-    </div>
-
-    <div class="banner">
-      <b>시연 데이터</b>
-      <p>아래 수치는 예시예요. 실제 졸업 판정에 사용할 수 없어요.</p>
-      <button type="button" data-source="general">기준 보기 ↗</button>
     </div>
 
     <div id="special-notice" class="notice" hidden></div>
@@ -183,14 +182,14 @@
       <summary class="general-progress-heading">
         <div>
           <h2>교양 이수표</h2>
-          <p class="muted">칸에 해당하는 영역의 과목을 체크하면 이수 현황이 바로 반영돼요.</p>
+          <p class="muted" id="general-table-note">과목을 체크하면 이수 현황이 바로 반영되고, 이수한 칸에 체크가 표시돼요. 칸을 누르면 해당 역량의 교양 과목으로 이동해요.</p>
         </div>
-        <span class="progress-toggle"><span class="when-open">접기</span><span class="when-closed">펼치기</span><span aria-hidden="true">⌄</span></span>
+        <span class="general-progress-actions">
+          <button class="text-btn" type="button" data-source="balance">교양 이수 기준 보기 ↗</button>
+          <span class="progress-toggle"><span class="when-open">접기</span><span class="when-closed">펼치기</span><span aria-hidden="true">⌄</span></span>
+        </span>
       </summary>
       <div class="general-progress-body">
-      <button class="text-btn" type="button" data-source="balance">교양 이수 기준 보기 ↗</button>
-
-      <p class="muted" id="general-table-note">이수한 칸에 체크가 표시돼요. 칸을 누르면 해당 역량의 교양 과목으로 이동해요.</p>
       <div class="general-table-scroll" role="region" aria-label="교양 이수표" tabindex="0">
         <table class="general-table" aria-describedby="general-table-note">
           <caption class="sr-only">필수교양 및 균형교양 영역별 핵심역량 이수 현황</caption>
@@ -524,8 +523,6 @@
 
       const saved = seed ? DATA.courses.slice(0, 3).map((c) => c.id) : read(storageKey(p), []);
       $('#goal').textContent = DATA.total ?? '미확인';
-      $('.banner b').textContent = seed ? '미리보기' : '입학연도 기준';
-      $('.banner p').textContent = '학과별 학점 기준과 공식 자료를 확인하세요.';
       $('#course-note').textContent = program
         ? '2026학년도 편성표에서 확인한 과목입니다. 이전에 들은 과목은 직접 추가할 수 있어요.'
         : '이 전공은 과목별 자료가 아직 등록되지 않았어요. 성적표에 있는 과목을 추가해 주세요.';
@@ -539,6 +536,7 @@
 
       $('#setup').hidden = true;
       $('#dashboard').hidden = false;
+      $('#header-source').hidden = false;
       $('#profile-label').textContent = `${p.entry}학번 · ${p.major || p.department} · ${p.college}`;
 
       const special = [
@@ -594,6 +592,7 @@
       if (profile) fillProfile(profile);
       $('#setup').hidden = false;
       $('#dashboard').hidden = true;
+      $('#header-source').hidden = true;
       window.scrollTo(0, 0);
     }
 
@@ -683,7 +682,7 @@
               </summary>
               <div class="description">
                 <span>${isGeneral ? '2026 안내서 기준 · 역량을 누르면 교과목이 펼쳐져요.' : cat.method}</span>
-                <button type="button" data-source="${cat.id}">기준 보기 ↗</button>
+                <button type="button" data-source="${cat.id}">학교 공식 기준 자료 ↗</button>
               </div>
               ${rowsHtml}
             </details>
