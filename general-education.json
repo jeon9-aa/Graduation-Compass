@@ -1,0 +1,4483 @@
+{
+  "year": 2026,
+  "source": "2026 교육과정 안내서.pdf",
+  "pages": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "competencies": [
+    "주도적사고",
+    "융합적탐색",
+    "창의적해결",
+    "소통형리더십",
+    "글로벌감각",
+    "사회적기여"
+  ],
+  "courses": [
+    {
+      "id": "general-055c9fb2325c",
+      "name": "대학생활과진로설계",
+      "category": "essential",
+      "credits": 1,
+      "year": 1,
+      "semester": 1,
+      "area": "",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-1539962c171e",
+      "name": "컴퓨팅사고-인문사회",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17,
+      "choice": "general-융합적탐색",
+      "choiceLabel": "계열별 1과목 선택"
+    },
+    {
+      "id": "general-a0cba14c9f03",
+      "name": "컴퓨팅사고-자연기술",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17,
+      "choice": "general-융합적탐색",
+      "choiceLabel": "계열별 1과목 선택"
+    },
+    {
+      "id": "general-731e1307c4e4",
+      "name": "프론티어리더십",
+      "category": "essential",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-77c6b8e49391",
+      "name": "사유와표현-인문사회",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 17,
+      "choice": "general-소통형리더십",
+      "choiceLabel": "계열별 1과목 선택"
+    },
+    {
+      "id": "general-00318809028a",
+      "name": "사유와표현-자연기술",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 17,
+      "choice": "general-소통형리더십",
+      "choiceLabel": "계열별 1과목 선택"
+    },
+    {
+      "id": "general-401866636a2d",
+      "name": "부경인성세미나",
+      "category": "essential",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 17,
+      "choice": "general-사회적기여",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-5f917206d9dc",
+      "name": "사회봉사(Ⅰ)",
+      "category": "essential",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 17,
+      "choice": "general-사회적기여",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-7c9eae924101",
+      "name": "생존수영과사회안전",
+      "category": "essential",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 17,
+      "choice": "general-사회적기여",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-1dd9c19e2b3c",
+      "name": "글로벌외국어-대학영어",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 17,
+      "choice": "general-글로벌감각",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-fd7d4c88accd",
+      "name": "글로벌외국어-대학일본어",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 17,
+      "choice": "general-글로벌감각",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-e390bbaa03a7",
+      "name": "글로벌외국어-대학중국어",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 17,
+      "choice": "general-글로벌감각",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-5f622e366603",
+      "name": "글로벌외국어-대학스페인어",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 17,
+      "choice": "general-글로벌감각",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-e9e08d293f0e",
+      "name": "글로벌외국어-대학베트남어",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 17,
+      "choice": "general-글로벌감각",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-4f5721813ebd",
+      "name": "글로벌외국어-대학한국어",
+      "category": "essential",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 17,
+      "choice": "general-글로벌감각",
+      "choiceLabel": "역량 내 1과목 선택"
+    },
+    {
+      "id": "general-4dc3ddec32bb",
+      "name": "서양고전의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-77feaee05a07",
+      "name": "동양철학고전읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-74f41d656eea",
+      "name": "서양철학고전읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f7b40b3209e2",
+      "name": "기초대학영어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-fc11f1d287ae",
+      "name": "언어와빅데이터",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-c38892f6352b",
+      "name": "자서전의세계",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-8198006a3d12",
+      "name": "대학생을위한생활습관의학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-7da43b1582f8",
+      "name": "세계도시기행과문화관광콘텐츠",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-c1bbb196a31c",
+      "name": "영화로만나는세상속수학과통계",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-7b1a3c716068",
+      "name": "노년생활과교육",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17,
+      "note": "평생교육사 관련 과목"
+    },
+    {
+      "id": "general-bf50370f57b3",
+      "name": "현대사회사상",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-28bc35981a31",
+      "name": "자기개발및진로설계",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-7a122566d9e4",
+      "name": "전공탐색과진로설계-인문사회과학대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3a2cc3022d53",
+      "name": "전공탐색과진로설계-자연과학대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-c1b7bea8daee",
+      "name": "전공탐색과진로설계-경영대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3f799333d2ca",
+      "name": "전공탐색과진로설계-공과대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-9a6dc32d5d53",
+      "name": "전공탐색과진로설계-수산과학대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-111573eedec7",
+      "name": "전공탐색과진로설계-환경해양대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-14c7cc4d7fc4",
+      "name": "전공탐색과진로설계-정보융합대학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-1f67836137de",
+      "name": "패션스타일링",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4d9d7d69ab9a",
+      "name": "경제학개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-0e2c70c7ca9f",
+      "name": "국제관계의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3db58c365bfe",
+      "name": "법학개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d82f00e1cd7f",
+      "name": "한국사의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f6e7ea122228",
+      "name": "현대인의심리",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-2526131600c0",
+      "name": "국제거시경제",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-0775079a2abf",
+      "name": "정치학원론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-9e9145b4a7d5",
+      "name": "해양도시부산의역사와문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-97ad6c4f9bf1",
+      "name": "학습전략의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-7574cecf2d1d",
+      "name": "현대경제의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-eb8aa71004de",
+      "name": "아동발달과교육",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-c1ceb9b02dd5",
+      "name": "여성의커리어디자인",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3ce2e236c2e9",
+      "name": "청년심리의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-9326c26459e8",
+      "name": "청년기업가정신1",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4fbb6d3a2e73",
+      "name": "청년기업가정신2",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-b8a0be1aa24d",
+      "name": "미적분학(Ⅰ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-82209863715f",
+      "name": "정보통신과뉴미디어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-bc16cae2bdc9",
+      "name": "지구과학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-9de0dbc9b29c",
+      "name": "컴퓨터활용과표현Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-02932274e3c4",
+      "name": "컴퓨터활용과표현Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-06ad1ef8963e",
+      "name": "창업과법률",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-06e9d6bbc59e",
+      "name": "바이오헬스케어의기초",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-ab359c7ee5cc",
+      "name": "수리적사고와문제해결",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f43d47ce0cbd",
+      "name": "양자정보와미래사회",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-fbd1789b9cb9",
+      "name": "미래에너지의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-044ccf9a1732",
+      "name": "공학화학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-a8579abb7797",
+      "name": "파이썬장고웹프로그래밍입문",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-fea80b25371e",
+      "name": "인공지능과프로그래밍",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-e1bedc22b792",
+      "name": "생성AI응용프로그래밍",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-5a942eacb75f",
+      "name": "취업창업입문",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-25a1c1901cf3",
+      "name": "지능형로봇의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-5f1b18c4cc56",
+      "name": "생활속AI와데이터",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-5983eb11aa88",
+      "name": "기초수학및연습",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-af6513790f01",
+      "name": "요가필라테스와심미적체험",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-08e264257b6c",
+      "name": "인공지능시대의스마트디지털콘텐츠제작실습",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-01832ff17b7e",
+      "name": "신소재의이해",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-42c6642f11c0",
+      "name": "일반물리학실험(Ⅰ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-012dfb66a027",
+      "name": "일반물리학실험(Ⅱ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d71e8db3a32a",
+      "name": "지구과학실험",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-5264a69f9fd0",
+      "name": "골프와동작분석",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "주도적사고"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-e29e9e0ca56d",
+      "name": "영문학의감상",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d5d60cabb8c2",
+      "name": "기호와언어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-bcd8a4b2a725",
+      "name": "철학과과학의만남",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-eba521384d9b",
+      "name": "문학속의수학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-48d8fbec0ea7",
+      "name": "한국문학의감상",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-22d920d773e3",
+      "name": "문화로보는세계사",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4a81f65328f9",
+      "name": "해양문화산업의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-a5f792deebb4",
+      "name": "음식문화와문화동력",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4bce104215e2",
+      "name": "일본문학과영화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-1c162a5c84cf",
+      "name": "고사성어로배우는중국사",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4339da6f7af9",
+      "name": "유럽에대한통섭적이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-04abf3ad524b",
+      "name": "챗GPT와AI활용교육",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-6fbca5890662",
+      "name": "노래와그림을통한고전스토리텔링",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4ff66753b090",
+      "name": "동원라이프아카데미",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-8cc8079637b4",
+      "name": "글로벌환경이슈의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-41a246cfa3d8",
+      "name": "인간과재난,생존의과학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-1ecf7532a309",
+      "name": "단맛의과학과건강한사회",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4a55ff4b0ff2",
+      "name": "교양한문",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f99f0b59ec7d",
+      "name": "여성과문학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-14f95153c200",
+      "name": "현대생활과패션",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-ec3007256e18",
+      "name": "사랑,결혼그리고부모됨",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-a676654b23cd",
+      "name": "해양과문학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-05f5018a2480",
+      "name": "종교와인간",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-536732c35ff0",
+      "name": "문화아카이브",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-ec977ea264ad",
+      "name": "여성학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-5f879c797975",
+      "name": "직업교육과HRD",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d434e503a991",
+      "name": "현대인의정신건강",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d16f45a46b59",
+      "name": "교육학의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-1daafdf96105",
+      "name": "미중무역전쟁의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d70b936755ac",
+      "name": "소비와법률",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d6695396fce9",
+      "name": "도시와사회",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-50cdff5b10a3",
+      "name": "현대사회의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-8853ca8ae5e3",
+      "name": "국제무역의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-b202bc87b9c4",
+      "name": "글로벌음식과사회",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-7cc46873bf15",
+      "name": "감각의세계",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-c603db902c80",
+      "name": "스포츠와국제관계",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f669f0ce4162",
+      "name": "콘텐츠한류와글로컬문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-cb49ba1647da",
+      "name": "화폐톺아보기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-604ef8b0cc6d",
+      "name": "기후와경제",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-fc3d478e0a18",
+      "name": "경영통계",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-7da930410f78",
+      "name": "선형대수",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-6dc7a7b32ff3",
+      "name": "수산의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3fe69f2c9df1",
+      "name": "일반물리학(Ⅱ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4e99f48af1fc",
+      "name": "지질과여행",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-6ac6f85b48ac",
+      "name": "건강과운동",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-a7babd5e15ab",
+      "name": "수식없는현대과학의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-03b3a34847c2",
+      "name": "스포츠데이터의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-719a25c8dc2a",
+      "name": "미생물과화학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-4180822a60da",
+      "name": "데이터분석기초",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-0ba45c0e0caa",
+      "name": "신체움직임과뇌과학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-9749e594fc0d",
+      "name": "해양과생물",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f5334750fc70",
+      "name": "공학물리(Ⅰ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-d2ffd788a2e4",
+      "name": "공학물리(Ⅱ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-f391c845718c",
+      "name": "비전공자를위한미생물학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3040cb5ff1d0",
+      "name": "자연과학의철학산책",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-b27da0a85175",
+      "name": "디지털인문학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-3edcab06a21c",
+      "name": "입문자를위한뇌과학기술",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 17
+    },
+    {
+      "id": "general-c13e0009927d",
+      "name": "실무전산(Ⅰ)",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d52ae4239a37",
+      "name": "영양과건강",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-02ce74d25684",
+      "name": "환경과학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-fa89f2e1395b",
+      "name": "실무전산(Ⅱ)-엑셀",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-4fffd52c8a6a",
+      "name": "실무전산(Ⅱ)-비주얼베이직",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-ff99efae5114",
+      "name": "실무전산(Ⅱ)-C언어",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d59e161be4b8",
+      "name": "실무전산(Ⅱ)-통계SW",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-17316d1bb71c",
+      "name": "코딩기초",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-494a2ab21c91",
+      "name": "스포츠잠수와수중환경의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-4d8ebe05d9bc",
+      "name": "기초과학자를위한해양탐사",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-11b781939827",
+      "name": "컨셉개발과시각표현",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-022c91c138fd",
+      "name": "인공지능시대의기술과전공의만남",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d910f7e85896",
+      "name": "해양스포츠와레저산업",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "융합적탐색"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a863aa61ec50",
+      "name": "문학의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d416d30d2197",
+      "name": "정책학개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c0e34ca71833",
+      "name": "중국문학의감상",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-bbd352381637",
+      "name": "화학과삶의지혜",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-4e9e47319320",
+      "name": "대중서사의미학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-7e48d20891d4",
+      "name": "이미지인문학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-116f9459c706",
+      "name": "인공지능시대의인문과예술",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-27af97f7105e",
+      "name": "시로읽는현대문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-325d53e1f231",
+      "name": "게이미피케이션문제해결과AI활용",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d3b2fe7f7d7e",
+      "name": "연극과희곡의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d3358f35001d",
+      "name": "영상예술의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-90aa933b82a4",
+      "name": "음악의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-9adce5adf5ad",
+      "name": "해양영화의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-63675d07ade3",
+      "name": "고전음악산책",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-ef38d1b7fdec",
+      "name": "세계미술기행",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-7c9d24c901b4",
+      "name": "프랑스문학과영화",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-0b5882b5adf4",
+      "name": "해양과세계사",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a5898dbba27b",
+      "name": "법과영화의산책",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-32517d12da60",
+      "name": "빅데이터로세상읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-117fa0098f3e",
+      "name": "기초경제원리의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f2bd8e589717",
+      "name": "일상속의경제원리",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c3022c5e773d",
+      "name": "부산사람의삶과문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-56311821b211",
+      "name": "마음건강과문제해결",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-15b15adc19c1",
+      "name": "동아시아해역도시입문",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-ad7428b38762",
+      "name": "지역사회문제해결",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-0c499bec7086",
+      "name": "디자인사",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-6baf4198080e",
+      "name": "창업아이디어발상",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-57be67c326a5",
+      "name": "경영수학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-cda6c85468bc",
+      "name": "미적분학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-37e3a663e720",
+      "name": "미적분학(Ⅱ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-97142be37efa",
+      "name": "생물학(Ⅰ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-10088a04defa",
+      "name": "생물학(Ⅱ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-b369d8640896",
+      "name": "일반물리학(Ⅰ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d5c2afdb6d3a",
+      "name": "일반화학(Ⅰ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-89c860504e9e",
+      "name": "일반화학(Ⅱ)",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-80df890a19bd",
+      "name": "창의성공학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-5b4903cc3310",
+      "name": "통계학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-4d319e8552e5",
+      "name": "시간과공간의인식과해석",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-bd4a440f695f",
+      "name": "생활속의감성공학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-042fabf34644",
+      "name": "공학경영의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-39a02886041e",
+      "name": "디자인원론",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-44d6377e97cf",
+      "name": "취업창업전략",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-0c83c5621612",
+      "name": "기술과창업",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3444ccd4b0e5",
+      "name": "디자인개론과역사",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-428117f467b8",
+      "name": "디지털드로잉",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f92d758832bc",
+      "name": "평면과매체",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3411dbb0a25b",
+      "name": "색채디자인",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-5bd853ee93bc",
+      "name": "관찰과표현",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-e6d7158aec28",
+      "name": "컴퓨터일러스트",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-bb67f9c4bb2f",
+      "name": "디자인구성과평면조형Ⅰ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c2e8235aaa67",
+      "name": "디자인구성과평면조형Ⅱ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f2b0cb178e20",
+      "name": "생물학실험(Ⅰ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-0996bd3941fd",
+      "name": "생물학실험(Ⅱ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3696e2765512",
+      "name": "일반화학실험(Ⅰ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f0439b873f30",
+      "name": "일반화학실험(Ⅱ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "창의적해결"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-6284beaa5ce5",
+      "name": "실용영작문",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-af82481430fc",
+      "name": "언어의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3b2fec27382e",
+      "name": "중급일본어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-50b4ba3a107c",
+      "name": "비즈니스중국어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-9975606700aa",
+      "name": "미디어의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-5a942e29b774",
+      "name": "기초한국어Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a08c5076c790",
+      "name": "기초한국어Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-b4847717a5da",
+      "name": "대학한국어Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-fb57bdf0039b",
+      "name": "대학한국어Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d43cfa04e4b6",
+      "name": "비판적사고와논리",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c8f2801e7614",
+      "name": "사례를통해배우는인문학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-48bf9164b36f",
+      "name": "언어로마음읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-55f9fecaa905",
+      "name": "문화소통과언어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-4f5f9cc05a72",
+      "name": "미디어영어",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-9d38c73ba70b",
+      "name": "소통과행복",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-78b9fbbfdda8",
+      "name": "비즈니스한국어Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3aaf1588356e",
+      "name": "비즈니스한국어Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-50dadfc42bac",
+      "name": "성인학습자를위한대학글쓰기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-6c3ba70c4e8f",
+      "name": "초다양성시대의사회언어학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-047f8ad1219f",
+      "name": "실용영어독해와어휘Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-aeb8d4f35fbf",
+      "name": "실용영어독해와어휘Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a57b4272026c",
+      "name": "일본어회화",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d7c0741fa4fa",
+      "name": "중국어회화",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f1ff690a0835",
+      "name": "성악앙상블",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-16f3067437f5",
+      "name": "실용영어회화초급",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-5b0dbacc672b",
+      "name": "실용영어회화중급",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-438e426cd8fd",
+      "name": "실용영어회화고급",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-b3056298c99f",
+      "name": "심리학개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a8163edafafe",
+      "name": "지방자치의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3e4e61175eff",
+      "name": "인간관계와정신건강",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-88c60b6ca26a",
+      "name": "경영의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-109ab0a535bc",
+      "name": "성인학습과상담",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18,
+      "note": "평생교육사 관련 과목"
+    },
+    {
+      "id": "general-bf1a06d8a50b",
+      "name": "미디어와소통",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-11b686bb8482",
+      "name": "인간관계심리학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a16b5cf75a31",
+      "name": "알기쉬운스포츠와법",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-2cc5b14707b0",
+      "name": "돈을부르는창업IR피칭과CEO스피치",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-12b1f2836e92",
+      "name": "잘나가는창업가의실무탐험",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c26bac08d81d",
+      "name": "인간중심의기술혁명",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c466b8f363d0",
+      "name": "발표와토의",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-ec6ab7bb9e1e",
+      "name": "팀스포츠",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-bdcccc7d4e83",
+      "name": "라켓스포츠",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "소통형리더십"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-50a25db2c4e2",
+      "name": "사회복지학개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-a6b20fc021a2",
+      "name": "글로벌시대의행복",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c715955be7ee",
+      "name": "인간이란무엇인가?",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-8f0026859176",
+      "name": "인간과문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-166f06c3797a",
+      "name": "AI로그려보는작은세상",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-2f4c8d137e3a",
+      "name": "중독의이해와예방",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3808ba9173fd",
+      "name": "해양과지속가능한미래",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f9da1cd6c675",
+      "name": "직업과윤리",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-5d39bdf9baec",
+      "name": "삶과죽음의철학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-55e9d71e154d",
+      "name": "선과악그리고정의",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-0845607ce798",
+      "name": "현대사회와기업의이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-76b08665a38a",
+      "name": "청렴과범죄의프로파일링",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-9d424d06e1ba",
+      "name": "생활과경제",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-9c6a2ee52603",
+      "name": "생활법률",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-ae51b7aaefec",
+      "name": "행정학개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-b36b6396a091",
+      "name": "영화속정치이야기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-f204f8c4d018",
+      "name": "국제사회와법질서의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3ab0bb440542",
+      "name": "4차산업혁명개론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-d2d7e73cc063",
+      "name": "지구환경거버넌스",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-c64aa5f4f8b3",
+      "name": "동북아해역의문화교류",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-15095fba406c",
+      "name": "벤처와창업이야기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-22e8a5c21955",
+      "name": "정치참여",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-421cd14004d6",
+      "name": "꿈을짓는부산청년",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-225c50f3a30c",
+      "name": "일상을읽는사회학적상상력",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-1efe93a19fae",
+      "name": "사회혁신과소셜벤처",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-3818e2a19404",
+      "name": "평화교육",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-e2d0d4516145",
+      "name": "현대사회와노동",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-fb2c125f010c",
+      "name": "포토보이스와인간사회이해",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-efe87b31ec7d",
+      "name": "사회봉사(Ⅱ)",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 18
+    },
+    {
+      "id": "general-e7c2a78060a1",
+      "name": "해양의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-a8bad349f49a",
+      "name": "4차산업혁명과여성",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-c47032ffc722",
+      "name": "내몸안의미생물학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-a792a97294d3",
+      "name": "생활속의안전",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-6fd7176837ba",
+      "name": "알기쉬운산업안전",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-7f24153687d7",
+      "name": "생활속의대기과학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-c3c6aa3416f3",
+      "name": "기후변화와기술적대안",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-88749ce2f73d",
+      "name": "노벨상과학자들의인류기여",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-083c7ff7fe21",
+      "name": "지구의지속가능성과회복",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-7566dfc428fc",
+      "name": "과학이들려주는해양이야기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-a34e4605052d",
+      "name": "창업사례분석",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-447adb3f062f",
+      "name": "생명공학과윤리",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-27c96515a9a8",
+      "name": "로봇명사와의만남",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-846c975e6df8",
+      "name": "재미로듣는해양수산과학",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-7bf98f35a970",
+      "name": "ESG패션",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-bf2a7cc43995",
+      "name": "구조수영과응급처치",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "사회적기여"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-6dce7b5d55b9",
+      "name": "유물로본우리의고대문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-d67fe7695f75",
+      "name": "영상으로보는한국문화Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-b998fb213ca6",
+      "name": "영상으로보는한국문화Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-e0b39380859a",
+      "name": "시사로보는한국사회Ⅰ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-c4ad9759fe3b",
+      "name": "시사로보는한국사회Ⅱ",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-92a1ce2117db",
+      "name": "동아시아문명과예술",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-8b91d6553b4e",
+      "name": "해양과민속",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-40c1e227f4b9",
+      "name": "한국사상의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-0a3285280bb3",
+      "name": "서양사상의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-7cd9e22ae487",
+      "name": "일본문화읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-96201e751203",
+      "name": "신화와상징",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-ae473c123146",
+      "name": "문화의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-d93331aa9760",
+      "name": "영어로세상읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-e9cc3262c28a",
+      "name": "문화심리학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-1048fd38f7c3",
+      "name": "여행으로읽는인문학",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-cb07d460a214",
+      "name": "영상으로보는일본문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-714dc0518dac",
+      "name": "중국영화론",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-8cc2a22a0f17",
+      "name": "외국인을위한한국사",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-73f8b9fbaf4e",
+      "name": "문화코드로보는현대중국",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-e51b46210d3a",
+      "name": "프랑스문화와예술",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-ccc1d7678112",
+      "name": "동북아해역의언어와문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-5f8497da6a45",
+      "name": "글로벌언어역량Ⅰ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-3c66321cd534",
+      "name": "글로벌언어역량Ⅱ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-4402a894400c",
+      "name": "글로벌언어역량Ⅲ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-49c4d97f5549",
+      "name": "글로벌언어역량Ⅳ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-eafd328f4737",
+      "name": "글로벌문화Ⅰ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19,
+      "note": "계절수업 · 별도 이수기준 적용"
+    },
+    {
+      "id": "general-94d02e487012",
+      "name": "글로벌문화Ⅱ",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "인간문화",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19,
+      "note": "계절수업 · 별도 이수기준 적용"
+    },
+    {
+      "id": "general-1924ede63e1a",
+      "name": "중국의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-057bb6e0f87a",
+      "name": "일본사읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-cb59f1098d6b",
+      "name": "중국사읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-615524778483",
+      "name": "그림으로보는세계사",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-7d2af849793f",
+      "name": "일본사회의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-73501876373b",
+      "name": "한국문화읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-262cb1975ce3",
+      "name": "동남아시아의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-881fd4c23ab5",
+      "name": "미국문화읽기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-6c82eec02cf7",
+      "name": "동북아해역의이해",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-50c10c332ec9",
+      "name": "글로벌이슈와세계시민",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-221a70b77e1c",
+      "name": "다문화사회와바다",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-33dae5290be7",
+      "name": "글로벌무역물류이야기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-e8e1c2850762",
+      "name": "세계화의진전과도전",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-69774251fa64",
+      "name": "스페인중남미대중문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-563e42633a44",
+      "name": "아시아의청년정치와대중문화",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-f35ea604ff49",
+      "name": "박물관과미술관으로보는유럽",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-9ad9e901afa0",
+      "name": "지리로보는세계",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-52f1832a4397",
+      "name": "지도의역사",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-92511fd60dee",
+      "name": "동아시아의전쟁과평화",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-08793c243f75",
+      "name": "글로벌코리안CEO리더십",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-d379612ba9cd",
+      "name": "다문화사회와세계시민",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-3892269a2ba7",
+      "name": "취업프로그램Ⅱ-오픈캠퍼스Ⅱ",
+      "category": "balance",
+      "credits": 2,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-da15fc4cfc7f",
+      "name": "글로벌아카데미Ⅰ",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-4f394139e471",
+      "name": "글로벌아카데미Ⅱ",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-09939b2d95af",
+      "name": "취업프로그램I",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-4fceaa659b82",
+      "name": "취업프로그램Ⅱ-오픈캠퍼스Ⅰ",
+      "category": "balance",
+      "credits": 1,
+      "year": null,
+      "semester": null,
+      "area": "사회역사",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-efc144eb7174",
+      "name": "과학사",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    },
+    {
+      "id": "general-d55bed9a7b4a",
+      "name": "세상을만든건축이야기",
+      "category": "balance",
+      "credits": 3,
+      "year": null,
+      "semester": null,
+      "area": "자연과학기술",
+      "competencies": [
+        "글로벌감각"
+      ],
+      "sourcePage": 19
+    }
+  ]
+}

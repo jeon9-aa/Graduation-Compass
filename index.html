@@ -286,8 +286,8 @@
         { id: 'common', name: '전공공통', color: '#5281a1' },
         { id: 'required', name: '전공필수', color: '#245f55' },
         { id: 'elective', name: '전공선택', color: '#78a88a' },
-        { id: 'essential', name: '필수교양', color: '#d6a550' },
-        { id: 'balance', name: '균형교양', color: '#a18ab6' },
+        { id: 'essential', name: '교양 필수', color: '#d6a550' },
+        { id: 'balance', name: '교양 선택', color: '#a18ab6' },
         { id: 'free', name: '자유선택', color: '#91a3b3' }
       ]
     };
@@ -295,6 +295,7 @@
     const DATA = { ...demo };
     let catalog = { entries: [], creditRules: [] };
     let directory = {};
+    let generalEducation = { competencies: [], courses: [] };
     let rule, unit, program;
     let profile = null;
     let selected = new Set();
@@ -489,6 +490,7 @@
       }));
       DATA.courses = (program?.courses || [])
         .map((c, idx) => ({ ...c, id: `course-${idx}` }))
+        .concat(generalEducation.courses)
         .concat(read(`${storageKey(p)}:custom`, []));
       DATA.areas = [...new Set(DATA.courses.map((c) => c.area).filter(Boolean))];
       DATA.competencies = [...new Set(DATA.courses.flatMap((c) => c.competencies || []))];
@@ -597,20 +599,22 @@
               (status === 'all' || (status === 'done' ? selected.has(c.id) : !selected.has(c.id)))
           );
           totalMatched += list.length;
-          if (!list.length) return '';
+          const isGeneral = ['essential', 'balance'].includes(cat.id);
+          if (!list.length && !isGeneral) return '';
 
           const isOpen = filtering || opened.has(cat.id);
-          const rowsHtml = list
+          const renderRows = (courses) => courses
             .map((c) => {
               const tags = [
                 c.year ? `${c.year}학년` : '',
                 c.semester ? `${c.semester}학기` : '',
                 c.choice
-                  ? '<i>선택 묶음 · 둘 중 1과목</i>'
+                  ? `<i>${esc(c.choiceLabel || '선택 묶음 · 둘 중 1과목')}</i>`
                   : ['common', 'required', 'essential'].includes(cat.id)
                     ? '<i>필수 지정</i>'
                     : '',
                 c.area ? `<i>${esc(c.area)}</i>` : '',
+                c.note ? `<i>${esc(c.note)}</i>` : '',
                 ...(c.competencies || []).map((a) => `<i>${esc(a)}</i>`)
               ]
                 .filter(Boolean)
@@ -629,6 +633,19 @@
             })
             .join('');
 
+          const renderCompetency = (name, courses, index) => {
+            const key = `${cat.id}-competency-${index}`;
+            return `<details class="competency-group" data-group="${key}" ${opened.has(key) || (filtering && courses.length) ? 'open' : ''}>
+              <summary><span>${esc(name)}</span><span class="competency-count">${courses.length}과목</span><span class="competency-chevron" aria-hidden="true">⌄</span></summary>
+              ${courses.length ? renderRows(courses) : '<p class="competency-empty">조건에 맞는 교과목이 없어요.</p>'}
+            </details>`;
+          };
+          const unclassified = list.filter((c) => !generalEducation.competencies.some((name) => c.competencies?.includes(name)));
+          const rowsHtml = isGeneral
+            ? generalEducation.competencies.map((name, index) => renderCompetency(name, list.filter((c) => c.competencies?.includes(name)), index)).join('')
+              + (unclassified.length ? renderCompetency('기타 · 역량 미지정', unclassified, 'other') : '')
+            : renderRows(list);
+
           return `
             <details class="course-group" data-group="${cat.id}" style="--cat:${cat.color}" ${isOpen ? 'open' : ''}>
               <summary>
@@ -638,7 +655,7 @@
                 <span aria-hidden="true">⌄</span>
               </summary>
               <div class="description">
-                <span>${cat.method}</span>
+                <span>${isGeneral ? '2026 안내서 기준 · 역량을 누르면 교과목이 펼쳐져요.' : cat.method}</span>
                 <button type="button" data-source="${cat.id}">기준 보기 ↗</button>
               </div>
               ${rowsHtml}
@@ -779,6 +796,13 @@
 
     document.addEventListener('click', (e) => {
       if (!e.target.closest('[data-source]')) return;
+      if (['essential', 'balance'].includes(e.target.closest('[data-source]').dataset.source)) {
+        openDialog(`<h2>교양 교육과정 기준</h2>
+          <p>2026 교육과정 안내서 16~19쪽의 필수교양과 균형교양 목록입니다. 화면의 ‘교양 선택’은 안내서의 ‘균형교양’에 해당해요.</p>
+          <p>필수교양은 9학점이며, 컴퓨팅사고·사유와표현은 계열별 1과목, 글로벌외국어는 6과목 중 1과목, 사회적기여는 3과목 중 1과목을 선택해요.</p>
+          <p>균형교양은 3개 영역별·6개 역량별 1과목 이상 이수 기준이 있어요. 공학교육인증 시행 학과에는 예외가 적용돼요. 입학연도와 개인별 적용 기준은 공식 안내를 확인해 주세요.</p>`);
+        return;
+      }
       const links = [
         [rule?.source, '학번별 학점 원표'],
         [program?.url, '2026학년도 과목표'],
@@ -886,6 +910,9 @@
         const jsonData = await res.json();
         catalog = jsonData.catalog || jsonData;
         directory = jsonData.directory || {};
+        const generalRes = await fetch('./general-education.json');
+        if (!generalRes.ok) throw new Error(`HTTP ${generalRes.status}`);
+        generalEducation = await generalRes.json();
       } catch (err) {
         console.error('졸업 데이터를 불러오지 못했습니다:', err);
         $('#live').textContent = '졸업 데이터를 불러오는 데 실패했습니다.';

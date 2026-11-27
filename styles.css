@@ -641,6 +641,45 @@ input[type="checkbox"] {
   color: var(--cat);
 }
 
+.competency-group {
+  border-top: 1px solid var(--line);
+}
+
+.course-group .competency-group > summary {
+  padding: 13px 18px 13px 28px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.competency-group > summary:hover,
+.competency-group[open] > summary {
+  background: #f8faf4;
+}
+
+.competency-group > summary:focus-visible {
+  outline: 2px solid var(--cat);
+  outline-offset: -3px;
+}
+
+.competency-count {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 400;
+  color: #65745c;
+  white-space: nowrap;
+}
+
+.competency-group[open] > summary .competency-chevron {
+  transform: rotate(180deg);
+}
+
+.competency-empty {
+  padding: 14px 28px;
+  font-size: 12px;
+  color: #65745c;
+}
+
 .category-credit {
   margin-left: auto;
   font-size: 12px;
