@@ -15,7 +15,25 @@
       {
         "college": "인문사회과학대학",
         "department": "영어영문학부",
-        "majors": [],
+        "majors": [
+          "영어영문학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://english.pknu.ac.kr/english/3936?action=view&no=9930417",
+        "attachments": [
+          {
+            "name": "영어영문학부 졸업요건 및 졸업자격인증제(26.01.20).pdf",
+            "url": "https://english.pknu.ac.kr/boardDownload.do?no=7992341",
+            "downloadTested": false
+          }
+        ]
+      },
+      {
+        "college": "인문사회과학대학",
+        "department": "영어영문학부",
+        "majors": [
+          "영어문화·산업전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://english.pknu.ac.kr/english/3936?action=view&no=9930417",
         "attachments": [
@@ -29,7 +47,19 @@
       {
         "college": "인문사회과학대학",
         "department": "일어일문학부",
-        "majors": [],
+        "majors": [
+          "일본어문학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://icms.pknu.ac.kr/japanese/4334",
+        "attachments": []
+      },
+      {
+        "college": "인문사회과학대학",
+        "department": "일어일문학부",
+        "majors": [
+          "일본학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://icms.pknu.ac.kr/japanese/4334",
         "attachments": []
@@ -61,7 +91,9 @@
       {
         "college": "인문사회과학대학",
         "department": "행정복지학부",
-        "majors": [],
+        "majors": [
+          "행정학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://pknupa.pknu.ac.kr/pknupasw/5571?action=view&no=9942142",
         "attachments": []
@@ -79,7 +111,19 @@
       {
         "college": "인문사회과학대학",
         "department": "국제지역학부",
-        "majors": [],
+        "majors": [
+          "국제학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://icms.pknu.ac.kr/dias/3996?action=view&no=9994207",
+        "attachments": []
+      },
+      {
+        "college": "인문사회과학대학",
+        "department": "국제지역학부",
+        "majors": [
+          "국제개발협력학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://icms.pknu.ac.kr/dias/3996?action=view&no=9994207",
         "attachments": []
@@ -117,22 +161,6 @@
       {
         "college": "인문사회과학대학",
         "department": "패션디자인학과",
-        "majors": [],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "인문사회과학대학",
-        "department": "사회계열",
-        "majors": [],
-        "homepageButton": false,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "인문사회과학대학",
-        "department": "자유전공학부",
         "majors": [],
         "homepageButton": true,
         "graduationPageUrl": null,
@@ -204,17 +232,53 @@
         "attachments": []
       },
       {
-        "college": "자연과학대학",
-        "department": "자유전공학부",
-        "majors": [],
+        "college": "경영대학",
+        "department": "경영학부",
+        "majors": [
+          "경영학전공"
+        ],
         "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
+        "graduationPageUrl": "https://dba.pknu.ac.kr/dba/1236?action=view&no=9964600",
+        "attachments": [
+          {
+            "name": "교양 및 전공 교육과정.pdf",
+            "url": "https://dba.pknu.ac.kr/boardDownload.do?no=7973152",
+            "downloadTested": false
+          },
+          {
+            "name": "[공통] 2024학년도 졸업요건 안내자료.hwp",
+            "url": "https://dba.pknu.ac.kr/boardDownload.do?no=7973153",
+            "downloadTested": false
+          }
+        ]
       },
       {
         "college": "경영대학",
         "department": "경영학부",
-        "majors": [],
+        "majors": [
+          "회계·재무학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://dba.pknu.ac.kr/dba/1236?action=view&no=9964600",
+        "attachments": [
+          {
+            "name": "교양 및 전공 교육과정.pdf",
+            "url": "https://dba.pknu.ac.kr/boardDownload.do?no=7973152",
+            "downloadTested": false
+          },
+          {
+            "name": "[공통] 2024학년도 졸업요건 안내자료.hwp",
+            "url": "https://dba.pknu.ac.kr/boardDownload.do?no=7973153",
+            "downloadTested": false
+          }
+        ]
+      },
+      {
+        "college": "경영대학",
+        "department": "경영학부",
+        "majors": [
+          "관광경영학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://dba.pknu.ac.kr/dba/1236?action=view&no=9964600",
         "attachments": [
@@ -233,7 +297,9 @@
       {
         "college": "경영대학",
         "department": "국제통상학부",
-        "majors": [],
+        "majors": [
+          "국제통상학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://icms.pknu.ac.kr/pknudic/1193?action=view&no=9996779",
         "attachments": [
@@ -246,11 +312,35 @@
       },
       {
         "college": "경영대학",
-        "department": "자유전공학부",
-        "majors": [],
+        "department": "국제통상학부",
+        "majors": [
+          "국제무역물류학전공"
+        ],
         "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
+        "graduationPageUrl": "https://icms.pknu.ac.kr/pknudic/1193?action=view&no=9996779",
+        "attachments": [
+          {
+            "name": "[공통] 2026학년도 졸업요건 안내자료.pdf",
+            "url": "https://icms.pknu.ac.kr/boardDownload.do?no=8007765",
+            "downloadTested": false
+          }
+        ]
+      },
+      {
+        "college": "경영대학",
+        "department": "국제통상학부",
+        "majors": [
+          "국제경영학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://icms.pknu.ac.kr/pknudic/1193?action=view&no=9996779",
+        "attachments": [
+          {
+            "name": "[공통] 2026학년도 졸업요건 안내자료.pdf",
+            "url": "https://icms.pknu.ac.kr/boardDownload.do?no=8007765",
+            "downloadTested": false
+          }
+        ]
       },
       {
         "college": "공과대학",
@@ -289,14 +379,14 @@
         ]
       },
       {
+        "homepageButton": false,
+        "graduationPageUrl": null,
+        "attachments": [],
         "college": "공과대학",
         "department": "기계공학부",
         "majors": [
-          "기계학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
+          "기계공학전공"
+        ]
       },
       {
         "college": "공과대학",
@@ -348,7 +438,7 @@
       },
       {
         "college": "공과대학",
-        "department": "고분자화학소재공학부",
+        "department": "고분자·화학소재공학부",
         "majors": [
           "에너지화학소재공학전공"
         ],
@@ -358,7 +448,7 @@
       },
       {
         "college": "공과대학",
-        "department": "고분자화학소재공학부",
+        "department": "고분자·화학소재공학부",
         "majors": [
           "고분자공학전공"
         ],
@@ -399,7 +489,7 @@
       },
       {
         "college": "공과대학",
-        "department": "시스템경영안전공학부",
+        "department": "시스템경영·안전공학부",
         "majors": [
           "산업경영공학전공"
         ],
@@ -415,7 +505,7 @@
       },
       {
         "college": "공과대학",
-        "department": "시스템경영안전공학부",
+        "department": "시스템경영·안전공학부",
         "majors": [
           "기술·데이터공학전공"
         ],
@@ -425,7 +515,7 @@
       },
       {
         "college": "공과대학",
-        "department": "시스템경영안전공학부",
+        "department": "시스템경영·안전공학부",
         "majors": [
           "안전공학전공"
         ],
@@ -518,14 +608,6 @@
         ]
       },
       {
-        "college": "공과대학",
-        "department": "자유전공학부",
-        "majors": [],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
         "college": "수산과학대학",
         "department": "식품과학부",
         "majors": [
@@ -556,7 +638,19 @@
       {
         "college": "수산과학대학",
         "department": "해양생산시스템관리학부",
-        "majors": [],
+        "majors": [
+          "해양생산학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://mpsm.pknu.ac.kr/en/view.do?idx=24339&no=409&pageIndex=1&sv=&sw=&view=view",
+        "attachments": []
+      },
+      {
+        "college": "수산과학대학",
+        "department": "해양생산시스템관리학부",
+        "majors": [
+          "해양경찰학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://mpsm.pknu.ac.kr/en/view.do?idx=24339&no=409&pageIndex=1&sv=&sw=&view=view",
         "attachments": []
@@ -609,17 +703,61 @@
       {
         "college": "수산과학대학",
         "department": "수해양산업교육과",
-        "majors": [],
+        "majors": [
+          "기관공학전공"
+        ],
         "homepageButton": true,
         "graduationPageUrl": "https://fedu.pknu.ac.kr/fedu/4464",
         "attachments": []
       },
       {
         "college": "수산과학대학",
-        "department": "해양수산경영경제학부",
-        "majors": [],
+        "department": "수해양산업교육과",
+        "majors": [
+          "냉동공학전공"
+        ],
         "homepageButton": true,
-        "graduationPageUrl": null,
+        "graduationPageUrl": "https://fedu.pknu.ac.kr/fedu/4464",
+        "attachments": []
+      },
+      {
+        "college": "수산과학대학",
+        "department": "수해양산업교육과",
+        "majors": [
+          "식품공학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://fedu.pknu.ac.kr/fedu/4464",
+        "attachments": []
+      },
+      {
+        "college": "수산과학대학",
+        "department": "수해양산업교육과",
+        "majors": [
+          "양식공학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://fedu.pknu.ac.kr/fedu/4464",
+        "attachments": []
+      },
+      {
+        "college": "수산과학대학",
+        "department": "수해양산업교육과",
+        "majors": [
+          "어업공학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://fedu.pknu.ac.kr/fedu/4464",
+        "attachments": []
+      },
+      {
+        "college": "수산과학대학",
+        "department": "수해양산업교육과",
+        "majors": [
+          "항해공학전공"
+        ],
+        "homepageButton": true,
+        "graduationPageUrl": "https://fedu.pknu.ac.kr/fedu/4464",
         "attachments": []
       },
       {
@@ -638,14 +776,6 @@
         "majors": [
           "자원환경경제학전공"
         ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "수산과학대학",
-        "department": "자유전공학부",
-        "majors": [],
         "homepageButton": true,
         "graduationPageUrl": null,
         "attachments": []
@@ -709,14 +839,14 @@
         "attachments": []
       },
       {
+        "homepageButton": false,
+        "graduationPageUrl": null,
+        "attachments": [],
         "college": "환경·해양대학",
         "department": "지구환경시스템과학부",
         "majors": [
-          "공간정보시스템공학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
+          "위성정보융합공학전공"
+        ]
       },
       {
         "college": "환경·해양대학",
@@ -732,14 +862,6 @@
         "majors": [],
         "homepageButton": true,
         "graduationPageUrl": "https://icms.pknu.ac.kr/ere/1455?action=view&no=9949047",
-        "attachments": []
-      },
-      {
-        "college": "환경·해양대학",
-        "department": "자유전공학부",
-        "majors": [],
-        "homepageButton": true,
-        "graduationPageUrl": null,
         "attachments": []
       },
       {
@@ -870,20 +992,20 @@
         "college": "정보융합대학",
         "department": "조형학부",
         "majors": [
-          "공업디자인전공"
+          "시각디자인전공"
         ],
         "homepageButton": true,
-        "graduationPageUrl": "https://industrial.pknu.ac.kr/industrial/3715?action=view&no=9919200",
+        "graduationPageUrl": "https://icms.pknu.ac.kr/visual/3675",
         "attachments": []
       },
       {
         "college": "정보융합대학",
         "department": "조형학부",
         "majors": [
-          "시각디자인전공"
+          "공업디자인전공"
         ],
         "homepageButton": true,
-        "graduationPageUrl": "https://icms.pknu.ac.kr/visual/3675",
+        "graduationPageUrl": "https://industrial.pknu.ac.kr/industrial/3715?action=view&no=9919200",
         "attachments": []
       },
       {
@@ -911,107 +1033,6 @@
         "majors": [],
         "homepageButton": true,
         "graduationPageUrl": "https://icms.pknu.ac.kr/smartmobility/5450",
-        "attachments": []
-      },
-      {
-        "college": "정보융합대학",
-        "department": "자유전공학부",
-        "majors": [],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "AX혁신대학",
-        "department": "AXIC자유전공학부",
-        "majors": [],
-        "homepageButton": true,
-        "scheduledOpening": "2027-03",
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "AX혁신대학",
-        "department": "AX지속가능융합학과",
-        "majors": [],
-        "homepageButton": true,
-        "scheduledOpening": "2027-03",
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "AX혁신대학",
-        "department": "AI융합시스템공학과",
-        "majors": [],
-        "homepageButton": true,
-        "scheduledOpening": "2027-03",
-        "graduationPageUrl": "https://icms.pknu.ac.kr/aics/9248",
-        "attachments": []
-      },
-      {
-        "college": "미래융합학부",
-        "department": null,
-        "majors": [
-          "평생교육·상담학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "미래융합학부",
-        "department": null,
-        "majors": [
-          "경찰범죄심리학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "미래융합학부",
-        "department": null,
-        "majors": [
-          "사회복지서비스학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "미래융합학부",
-        "department": null,
-        "majors": [
-          "기계조선에너지시스템공학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "미래융합학부",
-        "department": null,
-        "majors": [
-          "전기전자SW공학전공"
-        ],
-        "homepageButton": true,
-        "graduationPageUrl": null,
-        "attachments": []
-      },
-      {
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "majors": [],
-        "homepageButton": true,
-        "graduationPageUrl": "https://icms.pknu.ac.kr/duem/1575",
-        "attachments": []
-      },
-      {
-        "college": "학부대학",
-        "department": "학부대학",
-        "majors": [],
-        "homepageButton": true,
-        "graduationPageUrl": null,
         "attachments": []
       }
     ],
@@ -1627,63 +1648,6 @@
       {
         "year": 2023,
         "college": "공과대학",
-        "department": "공업화학·고분자공학부",
-        "major": "공업화학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 37,
-          "일반전공 선택": 8,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page864.html"
-      },
-      {
-        "year": 2023,
-        "college": "공과대학",
-        "department": "공업화학·고분자공학부",
-        "major": "고분자공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 33,
-          "일반전공 선택": 12,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page864.html"
-      },
-      {
-        "year": 2023,
-        "college": "공과대학",
-        "department": "나노융합공학과",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 39,
-          "일반전공 선택": 6,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page864.html"
-      },
-      {
-        "year": 2023,
-        "college": "공과대학",
         "department": "시스템경영·안전공학부",
         "major": "산업경영공학전공",
         "credits": {
@@ -1868,25 +1832,6 @@
           "심화전공": 36,
           "복수전공": 36,
           "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page864.html"
-      },
-      {
-        "year": 2023,
-        "college": "공과대학",
-        "department": "기계설계공학전공(기계IT융합시스템공학전공)-계약학과",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": null,
-          "교양 선택": null,
-          "교양 합계": null,
-          "전공 공통·필수": 20,
-          "일반전공 선택": 46,
-          "일반전공 소계": 66,
-          "심화전공": null,
-          "복수전공": null,
-          "자유선택 등": 66
         },
         "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page864.html"
       },
@@ -2273,25 +2218,6 @@
       {
         "year": 2023,
         "college": "환경·해양대학",
-        "department": "지구환경시스템과학부",
-        "major": "공간정보시스템공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 36,
-          "일반전공 선택": 9,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "환경·해양대학",
         "department": "해양공학과",
         "major": "",
         "credits": {
@@ -2377,25 +2303,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 9,
           "일반전공 선택": 36,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "정보융합대학",
-        "department": "미디어커뮤니케이션학부",
-        "major": "휴먼ICT융합전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 21,
-          "일반전공 선택": 24,
           "일반전공 소계": 45,
           "심화전공": 36,
           "복수전공": 36,
@@ -2586,114 +2493,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 28,
           "일반전공 선택": 17,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "미래융합대학",
-        "department": "융합인재개발학부",
-        "major": "평생교육·상담학과",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 30,
-          "일반전공 선택": 15,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "미래융합대학",
-        "department": "기계조선융합공학과",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 24,
-          "일반전공 선택": 21,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "미래융합대학",
-        "department": "융합공학부",
-        "major": "전기전자소프트웨어공학과",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 18,
-          "일반전공 선택": 27,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "미래융합대학",
-        "department": "공공안전경찰학과",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 26,
-          "일반전공 선택": 19,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page865.html"
-      },
-      {
-        "year": 2023,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "글로벌비즈니스트랙",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 25,
-          "일반전공 선택": 20,
           "일반전공 소계": 45,
           "심화전공": 36,
           "복수전공": 36,
@@ -3312,44 +3111,6 @@
       {
         "year": 2024,
         "college": "공과대학",
-        "department": "공업화학·고분자공학부",
-        "major": "공업화학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 39,
-          "일반전공 선택": 6,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page866.html"
-      },
-      {
-        "year": 2024,
-        "college": "공과대학",
-        "department": "공업화학·고분자공학부",
-        "major": "고분자공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 33,
-          "일반전공 선택": 12,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page866.html"
-      },
-      {
-        "year": 2024,
-        "college": "공과대학",
         "department": "나노융합반도체공학부",
         "major": "나노융합공학전공",
         "credits": {
@@ -3572,25 +3333,6 @@
           "심화전공": 36,
           "복수전공": 36,
           "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page866.html"
-      },
-      {
-        "year": 2024,
-        "college": "공과대학",
-        "department": "기계설계공학전공(기계IT융합시스템공학전공)-계약학과",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": null,
-          "교양 선택": null,
-          "교양 합계": null,
-          "전공 공통·필수": 20,
-          "일반전공 선택": 46,
-          "일반전공 소계": 66,
-          "심화전공": null,
-          "복수전공": null,
-          "자유선택 등": 66
         },
         "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page866.html"
       },
@@ -3977,25 +3719,6 @@
       {
         "year": 2024,
         "college": "환경·해양대학",
-        "department": "지구환경시스템과학부",
-        "major": "공간정보시스템공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 36,
-          "일반전공 선택": 9,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "환경·해양대학",
         "department": "해양공학과",
         "major": "",
         "credits": {
@@ -4081,25 +3804,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 9,
           "일반전공 선택": 36,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "정보융합대학",
-        "department": "미디어커뮤니케이션학부",
-        "major": "휴먼ICT융합전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 21,
-          "일반전공 선택": 24,
           "일반전공 소계": 45,
           "심화전공": 36,
           "복수전공": 36,
@@ -4328,133 +4032,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 30,
           "일반전공 선택": 15,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "미래융합대학",
-        "department": "융합인재개발학부",
-        "major": "평생교육·상담학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 30,
-          "일반전공 선택": 15,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "미래융합대학",
-        "department": "융합인재개발학부",
-        "major": "경찰범죄심리학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 24,
-          "일반전공 선택": 21,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "미래융합대학",
-        "department": "융합인재개발학부",
-        "major": "사회복지서비스학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 12,
-          "일반전공 선택": 33,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "미래융합대학",
-        "department": "스마트융합공학부",
-        "major": "스마트기계모빌리티전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 18,
-          "일반전공 선택": 27,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "미래융합대학",
-        "department": "스마트융합공학부",
-        "major": "스마트전기전자공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 26,
-          "일반전공 선택": 19,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page867.html"
-      },
-      {
-        "year": 2024,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "글로벌비즈니스트랙",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 25,
-          "일반전공 선택": 20,
           "일반전공 소계": 45,
           "심화전공": 36,
           "복수전공": 36,
@@ -5738,25 +5315,6 @@
       {
         "year": 2025,
         "college": "환경·해양대학",
-        "department": "지구환경시스템과학부",
-        "major": "공간정보시스템공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 30,
-          "일반전공 선택": 15,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "환경·해양대학",
         "department": "해양공학과",
         "major": "",
         "credits": {
@@ -5842,25 +5400,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 9,
           "일반전공 선택": 36,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "정보융합대학",
-        "department": "미디어커뮤니케이션학부",
-        "major": "휴먼ICT융합전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 21,
-          "일반전공 선택": 24,
           "일반전공 소계": 45,
           "심화전공": 36,
           "복수전공": 36,
@@ -6089,152 +5628,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 30,
           "일반전공 선택": 15,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "평생교육·상담학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 9,
-          "일반전공 선택": 36,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "경찰범죄심리학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 21,
-          "일반전공 선택": 24,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "사회복지서비스학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 9,
-          "일반전공 선택": 36,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "기계조선공조공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 18,
-          "일반전공 선택": 27,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "전기전자SW공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 18,
-          "일반전공 선택": 27,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "글로벌비즈니스트랙",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 16,
-          "일반전공 선택": 29,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "복수전공": 36,
-          "자유선택 등": 11
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page869.html"
-      },
-      {
-        "year": 2025,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "글로벌매니지먼트·거버넌스트랙",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 11,
-          "일반전공 선택": 34,
           "일반전공 소계": 45,
           "심화전공": 36,
           "복수전공": 36,
@@ -8039,166 +7432,6 @@
           "교양 합계": 40,
           "전공 공통·필수": 30,
           "일반전공 선택": 15,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "평생교육·상담학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 0,
-          "일반전공 선택": 45,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "경찰범죄심리학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 6,
-          "일반전공 선택": 39,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "사회복지서비스학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 0,
-          "일반전공 선택": 45,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "기계조선공조공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 12,
-          "일반전공 선택": 33,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "미래융합학부",
-        "department": "미래융합학부",
-        "major": "전기전자SW공학전공",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 12,
-          "일반전공 선택": 33,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "글로벌비즈니스트랙",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 16,
-          "일반전공 선택": 29,
-          "일반전공 소계": 45,
-          "심화전공": 36,
-          "전공 합계": 81,
-          "자유선택 등": 11,
-          "교직과목": null,
-          "복수전공": 36
-        },
-        "source": "https://www.pknu.ac.kr/ebook/curr/files/basic-html/page871.html"
-      },
-      {
-        "year": 2026,
-        "college": "글로벌자율전공학부",
-        "department": "글로벌자율전공학부",
-        "major": "글로벌매니지먼트·거버넌스트랙",
-        "credits": {
-          "졸업 필요학점": 132,
-          "교양 필수": 9,
-          "교양 선택": 31,
-          "교양 합계": 40,
-          "전공 공통·필수": 11,
-          "일반전공 선택": 34,
           "일반전공 소계": 45,
           "심화전공": 36,
           "전공 합계": 81,
