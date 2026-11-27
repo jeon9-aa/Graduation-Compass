@@ -778,6 +778,21 @@ input[type="checkbox"] {
   font-size: 12px;
 }
 
+.requirement-progress {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin-left: auto;
+}
+
+.requirement-progress small {
+  font-size: 10px;
+  color: #7b926b;
+  white-space: nowrap;
+}
+
 .requirement b {
   font-weight: 500;
   white-space: nowrap;

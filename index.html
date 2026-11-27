@@ -730,7 +730,7 @@
         .filter(([keyName]) => rule?.credits[keyName] != null)
         .map(
           ([keyName, count]) =>
-            `<div class="requirement"><span>${keyName}</span><b>${Math.max(0, rule.credits[keyName] - count)}학점 남음</b></div>`
+            `<div class="requirement"><span>${keyName}</span><span class="requirement-progress"><small>(${count} / ${rule.credits[keyName]})</small><b>${Math.max(0, rule.credits[keyName] - count)}학점 남음</b></span></div>`
         )
         .join('');
 
