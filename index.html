@@ -179,11 +179,6 @@
       </div>
     </section>
 
-    <nav class="study-nav" aria-label="교육과정 바로가기">
-      <a href="#course-selection">과목 선택</a>
-      <a href="#general-progress" id="show-general-progress">교양 이수표 ↗</a>
-    </nav>
-
     <details class="panel areas-panel" id="general-progress" open>
       <summary class="general-progress-heading">
         <div>
@@ -844,10 +839,6 @@
       renderAreas('#competencies', s.competencies);
       renderGeneralCompletion(s.courses);
     }
-
-    $('#show-general-progress').addEventListener('click', () => {
-      $('#general-progress').open = true;
-    });
 
     $('#courses').addEventListener('change', (e) => {
       const id = e.target.dataset.course;

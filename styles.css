@@ -874,7 +874,7 @@ input[type="checkbox"] {
 }
 
 .competency-group {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 20px;
 }
 
 .completion-check {
@@ -959,37 +959,6 @@ input[type="checkbox"] {
 
 .areas-panel {
   margin: 0 0 24px;
-  scroll-margin-top: 76px;
-}
-
-.study-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  gap: 8px;
-  padding: 10px 0;
-  margin-bottom: 12px;
-  background: var(--paper);
-  border-bottom: 1px solid var(--line);
-}
-
-.study-nav a {
-  padding: 6px 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  color: var(--green);
-  font-size: 13px;
-  text-decoration: none;
-}
-
-.study-nav a:hover {
-  background: #eef3e7;
-}
-
-#course-selection {
-  scroll-margin-top: 76px;
 }
 
 .general-progress-heading {
