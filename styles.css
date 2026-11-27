@@ -748,9 +748,18 @@ input[type="checkbox"] {
 .general-table {
   width: 100%;
   min-width: 780px;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   font-size: 12px;
+}
+
+.general-category-column {
+  width: 88px;
+}
+
+.general-area-column {
+  width: 132px;
 }
 
 .general-table th,
