@@ -179,8 +179,59 @@
       </div>
     </section>
 
+    <nav class="study-nav" aria-label="교육과정 바로가기">
+      <a href="#course-selection">과목 선택</a>
+      <a href="#general-progress" id="show-general-progress">교양 이수표 ↗</a>
+    </nav>
+
+    <details class="panel areas-panel" id="general-progress" open>
+      <summary class="general-progress-heading">
+        <div>
+          <h2>교양 이수표</h2>
+          <p class="muted">과목을 체크하면 이수 현황이 바로 반영돼요.</p>
+        </div>
+        <span class="progress-toggle"><span class="when-open">접기</span><span class="when-closed">펼치기</span><span aria-hidden="true">⌄</span></span>
+      </summary>
+      <div class="general-progress-body">
+      <button class="text-btn" type="button" data-source="balance">교양 이수 기준 보기 ↗</button>
+
+      <p class="muted" id="general-table-note">이수한 칸에 체크가 표시돼요. 칸을 누르면 해당 역량의 교양 과목으로 이동해요.</p>
+      <div class="general-table-scroll" role="region" aria-label="교양 이수표" tabindex="0">
+        <table class="general-table" aria-describedby="general-table-note">
+          <caption class="sr-only">필수교양 및 균형교양 영역별 핵심역량 이수 현황</caption>
+          <thead>
+            <tr><th colspan="2" rowspan="2" scope="colgroup">구분</th><th colspan="6" scope="colgroup">핵심역량</th></tr>
+            <tr>
+              <th scope="col">주도적사고<small>(주도적학습)</small></th>
+              <th scope="col">융합적탐색<small>(통섭적사고)</small></th>
+              <th scope="col">창의적해결<small>(확산적연계)</small></th>
+              <th scope="col">소통형리더십<small>(협력적소통)</small></th>
+              <th scope="col">글로벌감각<small>(문화적포용)</small></th>
+              <th scope="col">사회적기여<small>(사회적실천)</small></th>
+            </tr>
+          </thead>
+          <tbody id="general-completion"></tbody>
+        </table>
+      </div>
+
+      <details class="general-area-details">
+        <summary>영역·역량별 과목 수 자세히 보기</summary>
+      <div class="area-columns">
+        <div>
+          <h3>균형교양 영역 <small>영역별 이수 기록</small></h3>
+          <div id="areas"></div>
+        </div>
+        <div>
+          <h3>핵심역량 <small>역량별 이수 기록</small></h3>
+          <div id="competencies"></div>
+        </div>
+      </div>
+      </details>
+      </div>
+    </details>
+
     <div class="workspace">
-      <section>
+      <section id="course-selection">
         <div class="section-heading">
           <div>
             <h2>내 교육과정</h2>
@@ -234,26 +285,7 @@
       </aside>
     </div>
 
-    <section class="panel areas-panel">
-      <div class="section-heading">
-        <div>
-          <h2>영역별 이수 현황</h2>
-          <p class="muted">영역과 핵심역량은 각각 반영하고, 학점은 한 번만 계산해요.</p>
-        </div>
-        <button class="text-btn" type="button" data-source="balance">기준 보기 ↗</button>
-      </div>
 
-      <div class="area-columns">
-        <div>
-          <h3>균형교양 영역 <small>영역별 이수 기록</small></h3>
-          <div id="areas"></div>
-        </div>
-        <div>
-          <h3>핵심역량 <small>역량별 이수 기록</small></h3>
-          <div id="competencies"></div>
-        </div>
-      </div>
-    </section>
 
     <footer>
       <span>부경 졸업나침반</span>
@@ -676,6 +708,51 @@
         });
     }
 
+    function renderGeneralCompletion(courses) {
+      const competencies = ['주도적사고', '융합적탐색', '창의적해결', '소통형리더십', '글로벌감각', '사회적기여'];
+      const rows = [
+        { category: 'essential', label: '필수교양', area: '', name: '필수' },
+        { category: 'balance', label: '균형교양', area: '인간문화', name: '인간문화영역' },
+        { category: 'balance', area: '사회역사', name: '사회역사영역' },
+        { category: 'balance', area: '자연과학기술', name: '자연과학기술영역' }
+      ];
+      $('#general-completion').innerHTML = rows.map((row) => {
+        const cells = competencies.map((competency) => {
+          const matched = courses.filter((c) => c.category === row.category &&
+            (!row.area || c.area === row.area) && c.competencies?.includes(competency));
+          const description = `${row.label || '균형교양'} ${row.name} · ${competency}: ${matched.length ? `이수 ${matched.length}과목` : '미이수'}`;
+          return `<td class="completion-cell"><button type="button" class="completion-link" data-general-category="${row.category}" data-general-competency="${esc(competency)}" aria-label="${esc(description)} · 해당 역량 과목 보기" title="${esc(matched.length ? matched.map((c) => c.name).join(', ') : description)}"><span class="completion-check ${matched.length ? 'is-complete' : ''}" aria-hidden="true">${matched.length ? '✓' : ''}</span></button></td>`;
+        }).join('');
+        return `<tr class="${row.category === 'essential' ? 'general-required' : ''}">
+          ${row.label ? `<th scope="rowgroup" rowspan="${row.category === 'balance' ? 3 : 1}">${row.label}</th>` : ''}
+          <th scope="row">${row.name}</th>${cells}</tr>`;
+      }).join('');
+    }
+
+    function goToGeneralCompetency(category, competency) {
+      const index = generalEducation.competencies.indexOf(competency);
+      if (!['essential', 'balance'].includes(category) || index < 0) return;
+      // Clear filters so the destination always shows its courses.
+      $('#search').value = '';
+      $('#grade-filter').value = 'all';
+      $('#status-filter').value = 'all';
+      const key = `${category}-competency-${index}`;
+      opened.add(category);
+      opened.add(key);
+      renderCourses(calculate(selected));
+      const destination = $(`[data-group="${key}"]`);
+      destination?.querySelector('summary')?.focus({ preventScroll: true });
+      destination?.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+        block: 'start'
+      });
+    }
+
+    $('#general-completion').addEventListener('click', (event) => {
+      const button = event.target.closest('[data-general-category]');
+      if (button) goToGeneralCompetency(button.dataset.generalCategory, button.dataset.generalCompetency);
+    });
+
     function renderAreas(selector, values) {
       $(selector).innerHTML =
         Object.entries(values)
@@ -765,7 +842,12 @@
       $('#reset').disabled = !s.courses.length;
       renderAreas('#areas', s.areas);
       renderAreas('#competencies', s.competencies);
+      renderGeneralCompletion(s.courses);
     }
+
+    $('#show-general-progress').addEventListener('click', () => {
+      $('#general-progress').open = true;
+    });
 
     $('#courses').addEventListener('change', (e) => {
       const id = e.target.dataset.course;
