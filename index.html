@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#245f55">
+  <title>부경 졸업나침반 · 시연용 앱</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <button class="brand" id="home" type="button">
+      <span class="brand-icon" aria-hidden="true">↗</span>
+      <span>
+        부경 졸업나침반
+        <small>MY GRADUATION COMPASS</small>
+      </span>
+    </button>
+
+    <div class="top-right">
+      <span class="badge">시연용 프로토타입</span>
+      <button class="text-btn" id="about" type="button">프로젝트 소개 ↗</button>
+    </div>
+  </header>
+
+  <!-- 초기 프로필 설정 화면 -->
+  <main id="setup" class="setup">
+    <section class="intro">
+      <div class="eyebrow">● 나에게 맞는 졸업의 방향</div>
+      <h1>막막했던 졸업요건,<br>이제 <em>한눈에.</em></h1>
+      <p>입학 연도와 전공을 선택하면<br>나에게 적용되는 졸업요건을 확인할 수 있어요.</p>
+
+      <div class="art" aria-hidden="true">
+        <div class="compass"><span>N</span></div>
+        <div class="float">✓ 하나씩 채워가는<small>나의 졸업 체크리스트</small></div>
+        <div class="float second">↗ 졸업을 향해, 한 걸음</div>
+      </div>
+
+      <div class="steps">
+        <span>01 내 조건 선택</span>
+        <span>02 들은 과목 체크</span>
+        <span>03 남은 요건 확인</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="eyebrow">시작하기</div>
+      <h2>나의 교육과정 찾기</h2>
+      <p class="muted">내 정보를 선택하고 졸업까지의 경로를 살펴보세요.</p>
+      <div class="notice">입학연도별 학교 학점 기준과 내가 체크한 과목으로 이수 현황을 계산해요.</div>
+
+      <form id="profile-form">
+        <div class="field">
+          <label for="entry">입학 연도</label>
+          <select id="entry" required></select>
+        </div>
+
+        <div class="field">
+          <label for="college">단과대학</label>
+          <select id="college" required></select>
+        </div>
+
+        <div class="field">
+          <label for="department">학과 · 학부</label>
+          <select id="department" required disabled>
+            <option value="">단과대학을 먼저 선택하세요</option>
+          </select>
+        </div>
+
+        <div class="field" id="major-field" hidden>
+          <label for="major">세부 전공</label>
+          <select id="major"></select>
+        </div>
+
+        <fieldset>
+          <legend>해당하는 학적을 선택해 주세요</legend>
+          <div class="options">
+            <label><input type="checkbox" id="transfer">편입</label>
+            <label><input type="checkbox" id="change">전과</label>
+            <label><input type="checkbox" id="multi">다전공</label>
+          </div>
+        </fieldset>
+
+        <div class="conditional" id="transfer-fields" hidden>
+          <div class="field">
+            <label for="transfer-year">편입 연도</label>
+            <input id="transfer-year" type="number" min="2000" max="2040" placeholder="예: 2026">
+          </div>
+          <p>인정학점과 편입생 기준은 자료 연결 후 확인해요.</p>
+        </div>
+
+        <div class="conditional" id="change-fields" hidden>
+          <div class="field">
+            <label for="change-year">전과 승인연도</label>
+            <input id="change-year" type="number" min="2000" max="2040" placeholder="예: 2026">
+          </div>
+        </div>
+
+        <div class="conditional" id="multi-fields" hidden>
+          <div class="field">
+            <label for="multi-type">다전공 유형</label>
+            <select id="multi-type">
+              <option>복수전공</option>
+              <option>부전공</option>
+              <option>융합전공</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="multi-year">다전공 승인연도</label>
+            <input id="multi-year" type="number" min="2000" max="2040" placeholder="예: 2026">
+          </div>
+          <div class="field">
+            <label for="extra-major">추가 전공명</label>
+            <input id="extra-major" maxlength="60" placeholder="추가로 이수하는 전공을 입력하세요">
+          </div>
+        </div>
+
+        <button type="submit" class="primary wide">내 교육과정 보기 →</button>
+        <button type="button" id="try-demo" class="demo-link">예시 이수 내역으로 먼저 둘러보기 ↗</button>
+        <p class="save-note">선택한 과목은 이 브라우저에 자동 저장돼요.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- 졸업 현황 대시보드 -->
+  <main id="dashboard" class="dashboard" hidden>
+    <div class="heading">
+      <div>
+        <div class="eyebrow">MY CURRICULUM</div>
+        <h1>나의 졸업 현황</h1>
+        <p class="muted" id="profile-label"></p>
+      </div>
+      <button id="edit-profile" class="outline" type="button">내 정보 수정 ↗</button>
+    </div>
+
+    <div class="banner">
+      <b>시연 데이터</b>
+      <p>아래 수치는 예시예요. 실제 졸업 판정에 사용할 수 없어요.</p>
+      <button type="button" data-source="general">기준 보기 ↗</button>
+    </div>
+
+    <div id="special-notice" class="notice" hidden></div>
+
+    <section class="summary">
+      <div class="summary-main">
+        <div class="eyebrow">한 과목씩, 졸업에 가까워지고 있어요</div>
+        <h2>지금까지 <strong id="earned-title">0학점</strong>을 채웠어요.</h2>
+
+        <div class="metrics">
+          <div>
+            <span>총 이수학점</span>
+            <b id="earned">0</b>
+            <small>학점</small>
+          </div>
+          <div>
+            <span>졸업 필요학점</span>
+            <b id="goal">—</b>
+            <small>학점</small>
+          </div>
+          <div>
+            <span>앞으로 채울 학점</span>
+            <b id="remaining">130</b>
+            <small>학점</small>
+          </div>
+        </div>
+
+        <p class="summary-foot">✓ 과목 체크와 동시에 학점 · 영역 · 핵심역량이 반영돼요.</p>
+      </div>
+
+      <div class="chart-panel">
+        <div class="donut" id="donut" role="img">
+          <div>
+            <strong id="percent">0%</strong>
+            <small id="chart-credit">0 / 130학점</small>
+            <small class="chart-note">졸업학점 달성률</small>
+          </div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+    </section>
+
+    <div class="workspace">
+      <section>
+        <div class="section-heading">
+          <div>
+            <h2>내 교육과정</h2>
+            <p class="muted">이미 들은 과목에 체크해 주세요.</p>
+          </div>
+          <span class="badge">과목별 이수 기록</span>
+        </div>
+
+        <div class="filters">
+          <input id="search" placeholder="과목명 검색" aria-label="과목명 검색">
+          <select id="grade-filter" aria-label="학년 필터">
+            <option value="all">전체 학년</option>
+            <option value="1">1학년</option>
+            <option value="2">2학년</option>
+            <option value="3">3학년</option>
+            <option value="4">4학년</option>
+            <option value="5">5학년</option>
+            <option value="6">6학년</option>
+          </select>
+          <select id="status-filter" aria-label="이수 상태 필터">
+            <option value="all">전체 과목</option>
+            <option value="todo">미이수 과목</option>
+            <option value="done">이수한 과목</option>
+          </select>
+        </div>
+
+        <button id="add-course" class="outline" type="button">내 과목 추가</button>
+        <p class="muted" id="course-note"></p>
+        <div id="courses"></div>
+        <p class="empty" id="no-results" hidden>조건에 맞는 과목이 없어요. 검색어나 필터를 바꿔 보세요.</p>
+      </section>
+
+      <aside class="side">
+        <section class="panel">
+          <div class="section-heading">
+            <h2>남은 요건</h2>
+            <span class="badge">실시간 반영</span>
+          </div>
+          <div id="requirements"></div>
+          <p class="footnote">학과 지정 과목·졸업자격인증·학적별 예외는 학과 원문에서 확인해요.</p>
+          <button class="text-btn" type="button" data-source="certification">졸업자격인증 기준 보기 ↗</button>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <h2>이수한 과목 <span id="completed-count" class="badge">0</span></h2>
+            <button id="reset" class="text-btn" type="button">초기화</button>
+          </div>
+          <div id="completed"></div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="panel areas-panel">
+      <div class="section-heading">
+        <div>
+          <h2>영역별 이수 현황</h2>
+          <p class="muted">영역과 핵심역량은 각각 반영하고, 학점은 한 번만 계산해요.</p>
+        </div>
+        <button class="text-btn" type="button" data-source="balance">기준 보기 ↗</button>
+      </div>
+
+      <div class="area-columns">
+        <div>
+          <h3>균형교양 영역 <small>영역별 이수 기록</small></h3>
+          <div id="areas"></div>
+        </div>
+        <div>
+          <h3>핵심역량 <small>역량별 이수 기록</small></h3>
+          <div id="competencies"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>부경 졸업나침반</span>
+      <span>사유와 표현 팀 프로젝트 · 학교 공식 서비스가 아닌 시연용 앱</span>
+    </footer>
+  </main>
+
+  <dialog id="dialog">
+    <button class="dialog-close" id="close-dialog" type="button" aria-label="닫기">×</button>
+    <div id="dialog-content"></div>
+    <button id="dialog-ok" class="primary wide" type="button">확인했어요</button>
+  </dialog>
+
+  <div id="live" class="sr-only" aria-live="polite"></div>
+
+  <script>
+    'use strict';
+
+    const $ = (selector) => document.querySelector(selector);
+    const esc = (str) => String(str).replace(/[&<>"']/g, (ch) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[ch]));
+
+    const demo = {
+      categories: [
+        { id: 'common', name: '전공공통', color: '#5281a1' },
+        { id: 'required', name: '전공필수', color: '#245f55' },
+        { id: 'elective', name: '전공선택', color: '#78a88a' },
+        { id: 'essential', name: '필수교양', color: '#d6a550' },
+        { id: 'balance', name: '균형교양', color: '#a18ab6' },
+        { id: 'free', name: '자유선택', color: '#91a3b3' }
+      ]
+    };
+
+    const DATA = { ...demo };
+    let catalog = { entries: [], creditRules: [] };
+    let directory = {};
+    let rule, unit, program;
+    let profile = null;
+    let selected = new Set();
+    let demoMode = false;
+    let opened = new Set(['common', 'required', 'essential', 'balance']);
+
+    function read(key, fallback) {
+      try {
+        return JSON.parse(localStorage.getItem(key)) ?? fallback;
+      } catch {
+        return fallback;
+      }
+    }
+
+    function save(key, value) {
+      try {
+        localStorage.setItem(key, JSON.stringify(value));
+      } catch {
+        document.querySelectorAll('.save-note').forEach((el) => {
+          el.textContent = '이 브라우저에서는 자동 저장을 사용할 수 없어요. 창을 닫으면 기록이 사라져요.';
+        });
+        $('#live').textContent = '자동 저장을 사용할 수 없습니다.';
+      }
+    }
+
+    function storageKey(p) {
+      return 'pknu-dashboard-v3:' + (demoMode ? 'demo:' : 'student:') + JSON.stringify(p);
+    }
+
+    function setSelectOptions(el, values, prompt) {
+      el.innerHTML =
+        `<option value="">${prompt}</option>` +
+        values.map((v) => `<option>${esc(v)}</option>`).join('');
+    }
+
+    function calculate(ids) {
+      const unique = new Set(ids);
+      const courses = DATA.courses.filter((c) => unique.has(c.id));
+      const byCategory = Object.fromEntries(
+        DATA.categories.map((cat) => [
+          cat.id,
+          courses.filter((c) => c.category === cat.id).reduce((sum, c) => sum + c.credits, 0)
+        ])
+      );
+      const total = courses.reduce((sum, c) => sum + c.credits, 0);
+
+      return {
+        courses,
+        byCategory,
+        total,
+        remaining: Math.max(0, (DATA.total ?? 0) - total),
+        areas: Object.fromEntries(
+          (DATA.areas || []).map((a) => [a, courses.filter((c) => c.area === a).length])
+        ),
+        competencies: Object.fromEntries(
+          (DATA.competencies || []).map((a) => [
+            a,
+            courses.filter((c) => c.competencies?.includes(a)).length
+          ])
+        ),
+        mandatory: DATA.courses.filter(
+          (c) => ['common', 'required', 'essential'].includes(c.category) && !c.choice && !unique.has(c.id)
+        ),
+        choiceMet: courses.some((c) => c.choice)
+      };
+    }
+
+    function rebuildColleges() {
+      const entryYear = Number($('#entry').value);
+      const colleges = {};
+
+      const fromRules = catalog.creditRules
+        .filter((r) => String(r.year) === $('#entry').value)
+        .map((r) => ({ ...r, majors: r.major ? [r.major] : [] }));
+
+      const fromEntries = catalog.entries.filter(
+        (r) => !r.scheduledOpening || Number(r.scheduledOpening.slice(0, 4)) <= entryYear
+      );
+
+      for (const item of [...fromRules, ...fromEntries]) {
+        const deps = (colleges[item.college] ??= {});
+        const majors = (deps[item.department || item.college] ??= []);
+        for (const m of item.majors) {
+          if (!majors.includes(m)) majors.push(m);
+        }
+      }
+
+      DATA.colleges = colleges;
+      setSelectOptions($('#college'), Object.keys(colleges), '단과대학을 선택하세요');
+      $('#college').dispatchEvent(new Event('change'));
+    }
+
+    $('#entry').addEventListener('change', rebuildColleges);
+
+    $('#college').addEventListener('change', () => {
+      const col = $('#college').value;
+      setSelectOptions($('#department'), Object.keys(DATA.colleges[col] || {}), '학과 · 학부를 선택하세요');
+      $('#department').disabled = !col;
+      $('#major-field').hidden = true;
+      $('#major').required = false;
+      $('#major').innerHTML = '';
+    });
+
+    $('#department').addEventListener('change', () => {
+      const majors = DATA.colleges[$('#college').value]?.[$('#department').value] || [];
+      $('#major-field').hidden = !majors.length;
+      $('#major').required = Boolean(majors.length);
+      setSelectOptions($('#major'), majors, '세부 전공을 선택하세요');
+    });
+
+    for (const type of ['transfer', 'change', 'multi']) {
+      $(`#${type}`).addEventListener('change', () => {
+        const active = $(`#${type}`).checked;
+        $(`#${type}-fields`).hidden = !active;
+        $(`#${type}-fields`).querySelectorAll('input, select').forEach((field) => {
+          field.required = active;
+          field.disabled = !active;
+        });
+      });
+    }
+
+    function getProfile() {
+      return {
+        entry: $('#entry').value,
+        college: $('#college').value,
+        department: $('#department').value,
+        major: $('#major-field').hidden ? '' : $('#major').value,
+        transfer: $('#transfer').checked ? $('#transfer-year').value : null,
+        change: $('#change').checked ? $('#change-year').value : null,
+        multi: $('#multi').checked
+          ? {
+              type: $('#multi-type').value,
+              year: $('#multi-year').value,
+              name: $('#extra-major').value.trim()
+            }
+          : null
+      };
+    }
+
+    function fillProfile(p) {
+      $('#entry').value = p.entry;
+      rebuildColleges();
+      $('#college').value = p.college;
+      $('#college').dispatchEvent(new Event('change'));
+      $('#department').value = p.department;
+      $('#department').dispatchEvent(new Event('change'));
+      $('#major').value = p.major || '';
+
+      for (const type of ['transfer', 'change', 'multi']) {
+        $(`#${type}`).checked = Boolean(p[type]);
+        $(`#${type}`).dispatchEvent(new Event('change'));
+      }
+
+      $('#transfer-year').value = p.transfer || '';
+      $('#change-year').value = p.change || '';
+
+      if (p.multi) {
+        $('#multi-type').value = p.multi.type;
+        $('#multi-year').value = p.multi.year;
+        $('#extra-major').value = p.multi.name;
+      }
+    }
+
+    function start(p, seed = false) {
+      profile = p;
+      rule =
+        catalog.creditRules.find(
+          (r) => String(r.year) === p.entry &&
+            r.college === p.college &&
+            r.department === p.department &&
+            r.major === p.major
+        ) ||
+        catalog.creditRules.find(
+          (r) => String(r.year) === p.entry &&
+            r.college === p.college &&
+            r.department === p.department &&
+            !r.major
+        );
+
+      program = directory[p.major || p.department];
+      unit = catalog.entries.find(
+        (r) => r.college === p.college &&
+          (r.department || r.college) === p.department &&
+          (r.majors.includes(p.major) || !r.majors.length)
+      );
+
+      DATA.total = rule?.credits['졸업 필요학점'] ?? null;
+      DATA.categories = demo.categories.map((c) => ({
+        ...c,
+        target: null,
+        method: '체크한 과목의 학점을 합산해요.'
+      }));
+      DATA.courses = (program?.courses || [])
+        .map((c, idx) => ({ ...c, id: `course-${idx}` }))
+        .concat(read(`${storageKey(p)}:custom`, []));
+      DATA.areas = [...new Set(DATA.courses.map((c) => c.area).filter(Boolean))];
+      DATA.competencies = [...new Set(DATA.courses.flatMap((c) => c.competencies || []))];
+
+      const saved = seed ? DATA.courses.slice(0, 3).map((c) => c.id) : read(storageKey(p), []);
+      $('#goal').textContent = DATA.total ?? '미확인';
+      $('.banner b').textContent = seed ? '미리보기' : '입학연도 기준';
+      $('.banner p').textContent = '학과별 학점 기준과 공식 자료를 확인하세요.';
+      $('#course-note').textContent = program
+        ? '2026학년도 편성표에서 확인한 과목입니다. 이전에 들은 과목은 직접 추가할 수 있어요.'
+        : '이 전공은 과목별 자료가 아직 등록되지 않았어요. 성적표에 있는 과목을 추가해 주세요.';
+
+      selected = new Set(
+        Array.isArray(saved) ? saved.filter((id) => DATA.courses.some((c) => c.id === id)) : []
+      );
+
+      if (!demoMode) save('pknu-last-v3', p);
+      save(storageKey(p), [...selected]);
+
+      $('#setup').hidden = true;
+      $('#dashboard').hidden = false;
+      $('#profile-label').textContent = `${p.entry}학번 · ${p.major || p.department} · ${p.college}`;
+
+      const special = [
+        p.transfer && `${p.transfer}년 편입`,
+        p.change && `${p.change}년 전과`,
+        p.multi && `${p.multi.year}년 ${p.multi.type} (${p.multi.name})`
+      ].filter(Boolean);
+
+      $('#special-notice').hidden = !special.length;
+      $('#special-notice').textContent =
+        `확인 필요 · ${special.join(' · ')} · 개인별 인정학점과 추가 요건은 공식 자료에서 확인하세요.`;
+
+      $('#search').value = '';
+      $('#grade-filter').value = 'all';
+      $('#status-filter').value = 'all';
+
+      render();
+      window.scrollTo(0, 0);
+    }
+
+    $('#profile-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const p = getProfile();
+      if (p.multi && !p.multi.name) {
+        $('#extra-major').setCustomValidity('추가 전공명을 입력해 주세요.');
+        $('#extra-major').reportValidity();
+        return;
+      }
+      demoMode = false;
+      start(p);
+    });
+
+    $('#extra-major').addEventListener('input', () => $('#extra-major').setCustomValidity(''));
+
+    $('#try-demo').addEventListener('click', () => {
+      const r = catalog.creditRules.find((item) => item.major === '컴퓨터공학전공');
+      if (!r) return;
+      demoMode = true;
+      const p = {
+        entry: String(r.year),
+        college: r.college,
+        department: r.department,
+        major: r.major,
+        transfer: null,
+        change: null,
+        multi: null
+      };
+      fillProfile(p);
+      start(p, true);
+    });
+
+    function openSetup() {
+      if (profile) fillProfile(profile);
+      $('#setup').hidden = false;
+      $('#dashboard').hidden = true;
+      window.scrollTo(0, 0);
+    }
+
+    $('#home').addEventListener('click', openSetup);
+    $('#edit-profile').addEventListener('click', openSetup);
+
+    function toggleCourse(id) {
+      if (!DATA.courses.some((c) => c.id === id)) return;
+      selected.has(id) ? selected.delete(id) : selected.add(id);
+      save(storageKey(profile), [...selected]);
+      render();
+      const s = calculate(selected);
+      $('#live').textContent = `${s.total}학점 이수, ${s.remaining}학점 남음.`;
+    }
+
+    function renderCourses(s) {
+      const q = $('#search').value.trim().toLowerCase();
+      const grade = $('#grade-filter').value;
+      const status = $('#status-filter').value;
+      const filtering = Boolean(q || grade !== 'all' || status !== 'all');
+      let totalMatched = 0;
+
+      $('#courses').innerHTML = DATA.categories
+        .map((cat) => {
+          const list = DATA.courses.filter(
+            (c) =>
+              c.category === cat.id &&
+              (!q || c.name.toLowerCase().includes(q)) &&
+              (grade === 'all' || String(c.year) === grade) &&
+              (status === 'all' || (status === 'done' ? selected.has(c.id) : !selected.has(c.id)))
+          );
+          totalMatched += list.length;
+          if (!list.length) return '';
+
+          const isOpen = filtering || opened.has(cat.id);
+          const rowsHtml = list
+            .map((c) => {
+              const tags = [
+                c.year ? `${c.year}학년` : '',
+                c.semester ? `${c.semester}학기` : '',
+                c.choice
+                  ? '<i>선택 묶음 · 둘 중 1과목</i>'
+                  : ['common', 'required', 'essential'].includes(cat.id)
+                    ? '<i>필수 지정</i>'
+                    : '',
+                c.area ? `<i>${esc(c.area)}</i>` : '',
+                ...(c.competencies || []).map((a) => `<i>${esc(a)}</i>`)
+              ]
+                .filter(Boolean)
+                .join(' ');
+
+              return `
+                <label class="course-row">
+                  <input type="checkbox" data-course="${c.id}" ${selected.has(c.id) ? 'checked' : ''}>
+                  <span class="course-info">
+                    <span class="course-name">${esc(c.name)}</span>
+                    <span class="course-meta">${tags}</span>
+                  </span>
+                  <span class="credit">${c.credits}학점</span>
+                </label>
+              `;
+            })
+            .join('');
+
+          return `
+            <details class="course-group" data-group="${cat.id}" style="--cat:${cat.color}" ${isOpen ? 'open' : ''}>
+              <summary>
+                <span class="mark"></span>
+                <h3>${cat.name}</h3>
+                <span class="category-credit">${s.byCategory[cat.id]}${cat.target ? ` / ${cat.target}` : ''}학점</span>
+                <span aria-hidden="true">⌄</span>
+              </summary>
+              <div class="description">
+                <span>${cat.method}</span>
+                <button type="button" data-source="${cat.id}">기준 보기 ↗</button>
+              </div>
+              ${rowsHtml}
+            </details>
+          `;
+        })
+        .join('');
+
+      $('#no-results').hidden = Boolean(totalMatched);
+      $('#courses')
+        .querySelectorAll('details')
+        .forEach((details) => {
+          details.addEventListener('toggle', () => {
+            if (!filtering) {
+              details.open ? opened.add(details.dataset.group) : opened.delete(details.dataset.group);
+            }
+          });
+        });
+    }
+
+    function renderAreas(selector, values) {
+      $(selector).innerHTML =
+        Object.entries(values)
+          .map(([name, count]) => `<div class="area-status"><span>${esc(name)}</span><b>${count}과목</b></div>`)
+          .join('') || '<p class="muted">영역을 지정한 과목을 추가하면 표시돼요.</p>';
+    }
+
+    function render() {
+      const s = calculate(selected);
+
+      $('#earned-title').textContent = `${s.total}학점`;
+      $('#earned').textContent = s.total;
+      $('#remaining').textContent = DATA.total ? s.remaining : '—';
+      $('#percent').textContent = DATA.total ? `${Math.min(100, Math.round((s.total / DATA.total) * 100))}%` : '—';
+      $('#chart-credit').textContent = `${s.total} / ${DATA.total ?? '—'}학점`;
+
+      let cursor = 0;
+      const segments = [];
+      for (const c of DATA.categories) {
+        const end = Math.min(100, cursor + (DATA.total ? s.byCategory[c.id] / DATA.total : 0) * 100);
+        if (end > cursor) segments.push(`${c.color} ${cursor}% ${end}%`);
+        cursor = end;
+      }
+      if (cursor < 100) segments.push(`#e9ece5 ${cursor}% 100%`);
+
+      $('#donut').style.background = `conic-gradient(${segments.join(', ')})`;
+      $('#donut').setAttribute('aria-label', `${DATA.total ?? '—'}학점 중 ${s.total}학점 이수, ${s.remaining}학점 남음`);
+
+      $('#legend').innerHTML =
+        DATA.categories
+          .map(
+            (c) =>
+              `<div><i style="background:${c.color}"></i>${c.name}<b>${s.byCategory[c.id]}</b></div>`
+          )
+          .join('') +
+        `<div><i style="background:#e2e7dc"></i>남은 학점<b>${DATA.total ? s.remaining : '—'}</b></div>`;
+
+      renderCourses(s);
+
+      const by = s.byCategory;
+      const applied = {
+        '졸업 필요학점': s.total,
+        '전공 공통·필수': by.common + by.required,
+        '일반전공 선택': by.elective,
+        '일반전공 소계': by.common + by.required + by.elective,
+        '교양 필수': by.essential,
+        '교양 선택': by.balance,
+        '교양 합계': by.essential + by.balance
+      };
+
+      const reqHtml = Object.entries(applied)
+        .filter(([keyName]) => rule?.credits[keyName] != null)
+        .map(
+          ([keyName, count]) =>
+            `<div class="requirement"><span>${keyName}</span><b>${Math.max(0, rule.credits[keyName] - count)}학점 남음</b></div>`
+        )
+        .join('');
+
+      $('#requirements').innerHTML = reqHtml || '<p class="muted">학점 기준 미확인</p>';
+      if (s.mandatory.length) {
+        $('#requirements').innerHTML += `
+          <details>
+            <summary>목록의 미이수 공통·필수 과목 (${s.mandatory.length})</summary>
+            ${s.mandatory.map((c) => esc(c.name)).join(' · ')}
+          </details>
+        `;
+      }
+
+      $('#completed-count').textContent = s.courses.length;
+      $('#completed').innerHTML = s.courses.length
+        ? s.courses
+            .map((c) => {
+              const catName = DATA.categories.find((k) => k.id === c.category)?.name || '';
+              return `
+                <div class="completed-item">
+                  <div>
+                    ${esc(c.name)}<br>
+                    <small>${catName} · ${c.credits}학점</small>
+                  </div>
+                  <button type="button" data-remove="${c.id}" aria-label="${esc(c.name)} 이수 취소">×</button>
+                </div>
+              `;
+            })
+            .join('')
+        : '<p class="empty">아직 체크한 과목이 없어요.<br>교육과정에서 들은 과목을 선택해 주세요.</p>';
+
+      $('#reset').disabled = !s.courses.length;
+      renderAreas('#areas', s.areas);
+      renderAreas('#competencies', s.competencies);
+    }
+
+    $('#courses').addEventListener('change', (e) => {
+      const id = e.target.dataset.course;
+      if (!id) return;
+      toggleCourse(id);
+      document.querySelector(`[data-course="${id}"]`)?.focus({ preventScroll: true });
+    });
+
+    $('#completed').addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-remove]');
+      if (btn) toggleCourse(btn.dataset.remove);
+    });
+
+    for (const id of ['search', 'grade-filter', 'status-filter']) {
+      $(`#${id}`).addEventListener(id === 'search' ? 'input' : 'change', () => {
+        renderCourses(calculate(selected));
+      });
+    }
+
+    function openDialog(html) {
+      $('#dialog-content').innerHTML = html;
+      $('#dialog').showModal();
+    }
+
+    for (const id of ['close-dialog', 'dialog-ok']) {
+      $(`#${id}`).addEventListener('click', () => $('#dialog').close());
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('[data-source]')) return;
+      const links = [
+        [rule?.source, '학번별 학점 원표'],
+        [program?.url, '2026학년도 과목표'],
+        [unit?.graduationPageUrl, '학과 졸업안내'],
+        ...(unit?.attachments || []).map((f) => [f.url, f.name]),
+        [catalog.commonGraduationPageUrl, '학교 공통 졸업안내']
+      ];
+      const creditsText = Object.entries(rule?.credits || {})
+        .map(([k, v]) => `${esc(k)} ${v ?? '—'}`)
+        .join(' · ');
+      const linksHtml = links
+        .filter(([url]) => url)
+        .map(([url, label]) => `<p><a target="_blank" rel="noopener" href="${esc(url)}">${esc(label)} ↗</a></p>`)
+        .join('');
+
+      openDialog(`<h2>졸업 기준과 공식 자료</h2><p>${creditsText}</p>${linksHtml}`);
+    });
+
+    $('#about').addEventListener('click', () => {
+      openDialog(`
+        <h2>졸업까지의 길을<br>조금 더 쉽게.</h2>
+        <p>부경대 「사유와 표현」 팀 프로젝트에서 출발했어요. 재학생 13명 중 9명은 신입생 때 졸업요건 파악이 어려웠고, 10명은 검색이나 선배·지인을 통해 정보를 얻었다고 답했어요.</p>
+        <p>내 조건 선택 → 들은 과목 체크 → 남은 요건 확인이라는 흐름을 구현한 시연용 앱이에요. 설문은 참여자 13명의 응답으로 모든 재학생을 대표하지 않아요.</p>
+        <p>학교 자료에서 가져온 학점 기준을 표시해요. 과목 체크는 현재 브라우저에만 저장돼요. 파일을 옮기거나 다른 브라우저로 열면 기록이 이어지지 않을 수 있어요.</p>
+      `);
+    });
+
+    $('#reset').addEventListener('click', () => {
+      openDialog(`
+        <h2>이수 표시를 초기화할까요?</h2>
+        <p>현재 선택한 조건의 과목 체크를 모두 해제해요.</p>
+        <button class="outline" id="confirm-reset" type="button">이수 표시 모두 해제</button>
+      `);
+      $('#confirm-reset').addEventListener('click', () => {
+        selected.clear();
+        save(storageKey(profile), []);
+        render();
+        $('#dialog').close();
+      });
+    });
+
+    $('#add-course').addEventListener('click', () => {
+      const categoryOptions = DATA.categories
+        .map((c) => `<option value="${c.id}">${c.name}</option>`)
+        .join('');
+
+      openDialog(`
+        <h2>내 과목 추가</h2>
+        <form id="new-course">
+          <label>과목명<input name="title" maxlength="80" required></label>
+          <label>학점<input name="credits" type="number" min="0.5" step="0.5" required></label>
+          <label>이수 구분<select name="category">${categoryOptions}</select></label>
+          <label>학년<input name="year" type="number" min="1" max="6" required></label>
+          <label>학기<select name="semester"><option>1</option><option>2</option></select></label>
+          <label>교양 영역 (선택)<input name="area" maxlength="40"></label>
+          <label>핵심역량 (쉼표로 구분)<input name="tags" maxlength="100"></label>
+          <button class="primary" type="submit">이수한 과목으로 추가</button>
+        </form>
+      `);
+
+      $('#new-course').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const name = String(formData.get('title') || '').trim();
+        if (!name) return;
+
+        let course = DATA.courses.find((c) => c.name === name);
+        if (!course) {
+          course = {
+            name,
+            id: `user-${crypto.randomUUID()}`,
+            category: formData.get('category'),
+            credits: Number(formData.get('credits')),
+            year: Number(formData.get('year')),
+            semester: formData.get('semester'),
+            area: String(formData.get('area') || '').trim(),
+            competencies: [
+              ...new Set(
+                String(formData.get('tags') || '')
+                  .split(',')
+                  .map((t) => t.trim())
+                  .filter(Boolean)
+              )
+            ]
+          };
+          DATA.courses.push(course);
+          save(`${storageKey(profile)}:custom`, DATA.courses.filter((c) => c.id.startsWith('user-')));
+          if (course.area && !DATA.areas.includes(course.area)) DATA.areas.push(course.area);
+          for (const tag of course.competencies) {
+            if (!DATA.competencies.includes(tag)) DATA.competencies.push(tag);
+          }
+        }
+
+        selected.add(course.id);
+        save(storageKey(profile), [...selected]);
+        render();
+        $('#dialog').close();
+      });
+    });
+
+    async function init() {
+      try {
+        const res = await fetch('./graduation-data.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const jsonData = await res.json();
+        catalog = jsonData.catalog || jsonData;
+        directory = jsonData.directory || {};
+      } catch (err) {
+        console.error('졸업 데이터를 불러오지 못했습니다:', err);
+        $('#live').textContent = '졸업 데이터를 불러오는 데 실패했습니다.';
+        return;
+      }
+
+      const years = [...new Set(catalog.creditRules.map((r) => r.year))].reverse();
+      setSelectOptions($('#entry'), years, '입학 연도를 선택하세요');
+      rebuildColleges();
+
+      const lastProfile = read('pknu-last-v3', null);
+      if (lastProfile) {
+        profile = lastProfile;
+        fillProfile(lastProfile);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
