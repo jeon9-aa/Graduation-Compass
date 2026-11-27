@@ -782,9 +782,9 @@
       const links = [
         [rule?.source, '학번별 학점 원표'],
         [program?.url, '2026학년도 과목표'],
-        [unit?.graduationPageUrl, '학과 졸업안내'],
+        [unit?.graduationPageUrl, '학과 졸업안내 공식 홈페이지로 이동'],
         ...(unit?.attachments || []).map((f) => [f.url, f.name]),
-        [catalog.commonGraduationPageUrl, '학교 공통 졸업안내']
+        [catalog.commonGraduationPageUrl, '학교 공통 졸업안내 공식 홈페이지로 이동']
       ];
       const creditsText = Object.entries(rule?.credits || {})
         .map(([k, v]) => `${esc(k)} ${v ?? '—'}`)
